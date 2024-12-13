@@ -58,9 +58,11 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+### There's a horizontal rule below this (and plot)
 
 * * *
+
+<iframe src="centroids_top_words_plot.html" width="800" height="600" frameborder="0"></iframe>
 
 ### Here is an unordered list:
 
