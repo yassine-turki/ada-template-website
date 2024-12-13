@@ -1,9 +1,9 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
-description: A template website for ADA
+title: Screening Change:
+description: Feminism, Representation, and Social Transformation in Film
 show_downloads: True
 navigation:
-  - title: Home
+  - title: Story
     url: /
   - title: Example
     url: example
