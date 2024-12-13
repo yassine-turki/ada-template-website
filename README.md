@@ -1,5 +1,5 @@
 # Data Story
-<p style="font-size: 17px;">Warning message. Angelina is a fictitious character created for the sake of the project.</p>
+<p style="font-size: 8px;">Warning message. Angelina is a fictitious character created for the sake of the project.</p>
 
 ### Introduction
 
