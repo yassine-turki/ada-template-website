@@ -21,7 +21,7 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 
 It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, I will be able to determine whether my friend was right or not. 
 
-Starting from the beginning
+<h2> Starting from the beginning </h2>
 
 I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio in France which was of [OSKAR...]. I also took the opportunity to look at various countries. Figure [OSKAR...] shows the ratio of actors vs actresses by world region. 
 …
@@ -38,6 +38,7 @@ I was disappointed to see that women are much less present than men. But I did n
 
 …
 The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.  
+
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. Figure <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="fig2">
