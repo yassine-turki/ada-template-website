@@ -1,6 +1,17 @@
 # Data Story
 <p style="font-size: 8px;">Warning message. Angelina is a fictitious character created for the sake of the project.</p>
 
+<style>
+    figure {
+        counter-increment: figure;
+    }
+    figcaption:before {
+        content: "Figure " counter(figure) ": ";
+        font-weight: bold;
+    }
+</style>
+
+
 ### Introduction
 
 (some AI generated photo?)
@@ -16,25 +27,16 @@ I went on the internet and downloaded the information of all movies from wikiped
 
 I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#fig1">Figure 1</a>) globally but also by regions (figure…OSKAR)
 
-<style>
-    figure {
-        counter-increment: figure;
-    }
-    figcaption:before {
-        content: "Figure " counter(figure) ": ";
-        font-weight: bold;
-    }
-</style>
 
 <figure id="fig1">
     <iframe src="Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
-    <figcaption style="text-align: center; margin-top: 8px;">
+    <figcaption style="text-align: center; margin-top: 4px;">
         Mean Ratio and Count by Movie Release Date
     </figcaption>
 </figure>
 
 …
-The proportion of women in films globally increased a tiny bit by the end of the 20th century. In France, it increased by …LOLO, while in …LOLO, it only increased by ….LOLO
+The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, it increased by …LOLO, while in …LOLO, it only increased by ….LOLO
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. Figure …LOLO shows the share of women in the movie industry by genre, and figure…LOLO shows the evolution of women in those genres. 
 
 …
