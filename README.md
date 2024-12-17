@@ -1,6 +1,7 @@
 # Data Story
 <p style="font-size: 8px;">Warning message. Angelina is a fictitious character created for the sake of the project.</p>
 
+
 <style>
     figure {
         counter-increment: figure;
@@ -31,14 +32,22 @@ I was disappointed to see that women are much less present than men. But I did n
 <figure id="fig1">
     <iframe src="Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
-        Mean Ratio and Count by Movie Release Date
+        Ratio of actresses and number of movies by year
     </figcaption>
 </figure>
 
 …
-The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, it increased by …LOLO, while in …LOLO, it only increased by ….LOLO
-One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. Figure …LOLO shows the share of women in the movie industry by genre, and figure…LOLO shows the evolution of women in those genres. 
+The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.  
+One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. Figure <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
+<figure id="fig2">
+    <iframe src="top_genres.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Most and least inclusive genres. 
+    </figcaption>
+</figure>
+I find it amusing that the most "inclusive" genres (still bellow 50%) happens to be 'Kitchen sink realism'. The other genres are not much better: "Adult", or even "Melodrama". Obviously, women only complain and work in the kitchen :(.  I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved "Spaghetti Western". 
+ 
 …
 
 Looking at [movie genre] definitely does not seem very attractive as they are only [share of women]. However, [movie genre] seems already a bit more favorable for women. It’s not really my type though. 
