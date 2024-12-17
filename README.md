@@ -36,10 +36,9 @@ I was disappointed to see that women are much less present than men. But I did n
     </figcaption>
 </figure>
 
-…
 The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.  
 
-One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. Figure <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
+One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="fig2">
     <iframe src="top_genres.html" width="800" height="600" frameborder="0"></iframe>
