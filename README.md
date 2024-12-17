@@ -21,7 +21,7 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 
 It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, I will be able to determine whether my friend was right or not. 
 
-<h2> Starting from the beginning </h2>
+### Starting from the beginning
 
 I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio in France which was of [OSKAR...]. I also took the opportunity to look at various countries. Figure [OSKAR...] shows the ratio of actors vs actresses by world region. 
 …
