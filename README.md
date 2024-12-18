@@ -41,11 +41,12 @@ The proportion of women in films increases very slightly from the 60s. In 1960 t
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="fig2">
-    <iframe src="top_genres.html" width="800" height="600" frameborder="0""></iframe>
+    <iframe src="top_genres.html" width="900" height="600" frameborder="0""></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genres. 
     </figcaption>
 </figure>
+
 I find it amusing that the most "inclusive" genres (still bellow 50%) happens to be 'Kitchen sink realism'. The other genres are not much better: "Adult", or even "Melodrama". Obviously, women only complain and work in the kitchen :(.  I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved "Spaghetti Western". 
  
 …
