@@ -151,7 +151,7 @@ Before diving into comparisons, let me show you how the categories were formed. 
 
 **Figure: 3D Visualization of Category Clusters**  
 <figure id="fig6">
-    <iframe src="centroids_top_words_plot.html" width="800" height="500" frameborder="0"></iframe>
+    <iframe src="centroids_top_words_plot_3d.html" width="800" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Evolution of the gender ratio for different roles 
     </figcaption>
