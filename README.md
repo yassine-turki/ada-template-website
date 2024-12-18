@@ -41,9 +41,7 @@ The proportion of women in films increases very slightly from the 60s. In 1960 t
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="fig2">
-    <div style="text-align: center;">
-        <iframe src="top_genres.html" width="800" height="600" frameborder="0""></iframe>
-    </div>
+    <iframe src="top_genres.html" width="800" height="600" frameborder="0""></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genres. 
     </figcaption>
