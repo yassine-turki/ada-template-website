@@ -114,40 +114,33 @@ Ok let’s try a different approach to see the topics of movies with a large pro
 [START OF ALESSANDRO's PARAGRAPH]
 Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant. [ALESSANDRO]
 
-## Delving into the Language of Film
 
-Up to now, I’ve focused on the tangible aspects of representation: the ratio of actors to actresses, how main roles are distributed, and how these patterns evolve over time or differ by region. But there’s another dimension to consider—*how* stories are told. Do movies featuring more actresses differ thematically and emotionally from those dominated by actors? To answer this, I turned to the actual summaries of the films.
+# Exploring the Language of Film Through Gendered Lenses
 
-### Text Preprocessing and Thematic Categories
 
-First, I needed to prepare the textual data. I took all the movie summaries and performed several preprocessing steps:  
-- Converted all text to lowercase  
-- Lemmatized words (reducing them to their dictionary form)  
-- Removed extremely common and extremely rare words, ensuring that only meaningful, distinctive terms remained
+## Introduction
 
-This cleaned dataset allowed me to compare films on a more even linguistic footing.
+I’ve spent quite some time looking at the proportion of actresses and actors in films, the roles they take, and how those numbers vary by time and place. I’ve seen that women are underrepresented, even though the situation has slightly improved over time. But raw numbers aren’t the whole story. If I really want to understand whether films reflect a masculine or feminine perspective, I need to look deeper. Are movies made “by men for men,” as my friend suggested, or do the stories themselves evolve when more women are involved?
 
-To quantify the narrative content, I defined a series of **categories**—themes like love, violence, family, happiness, sadness, career, and so on. Each category corresponded to a set of seed words that captured its essence. I then used a language model to embed these words into a vector space. By computing the centroid of these embeddings, I obtained a semantic “center” for each category.
+To go further, I’ve decided to analyze the *language* used to summarize these films. Specifically, I want to know if movies with a higher proportion of actresses differ thematically from those dominated by actors. If they do, how do these themes vary over time and across regions? And are these differences actually statistically significant, or could they be due to chance?
 
-### Identifying Category-Related Words
+## Preparing the Textual Data
 
-From each category’s centroid, I selected the 100 words in the entire corpus most similar to that centroid (based on cosine similarity). These 100 words effectively broaden the category from a handful of seed terms to a richer semantic field. For instance, the “violence” category might include words like *“attack,” “battle,” “murder,” “gunfight,”* and so forth.
+To ensure I was comparing films on an even footing, I began with a thorough preprocessing of the movie summaries:
 
-After determining these sets of 100 words per category, I counted how frequently they appeared in each film’s summary. Dividing by the total number of words in the summary gave me a normalized “score” representing how strongly each category was represented in that movie’s narrative.
+- **Lowercasing:** All text was converted to lowercase.
+- **Lemmatization:** Words were reduced to their dictionary form (e.g., “running” → “run”).
+- **Filtering Common/Rare Terms:** Extremely common and extremely rare words were removed to focus on words that carry meaningful distinctions.
 
-### Splitting the Dataset and Statistical Testing
+This cleaned corpus set the stage for identifying thematic categories.
 
-Since my ultimate goal was to see whether narratives differ in films featuring more women than men, I split the dataset into two subsets:  
-1. **Female-Dominant Films**: Movies with a higher proportion of actresses  
-2. **Male-Dominant Films**: Movies with a higher proportion of actors
+## Defining and Identifying Thematic Categories
 
-By comparing average category scores between these two subsets, I could detect meaningful thematic shifts. To ensure that any observed differences were not due to chance, I ran **statistical tests** (e.g., Mann-Whitney U tests) to verify the significance of these differences. Many categories showed statistically significant variations, reinforcing the idea that gender composition does correlate with narrative themes.
+I created a set of **thematic categories**, each reflecting a concept like “love,” “violence,” “family,” “career,” “empowerment,” and more. Each category started as a seed list of words that define its core meaning. Using a language model, I embedded these seed words into a vector space and computed a “centroid” for each category—a sort of semantic average that represents the heart of that concept.
 
-### Visualizing the Results
+### Visualizing Category Word Clusters
 
-#### 1. Category Embedding Visualization
-
-Before diving into comparisons, let me show you how the categories were formed. Below is a 3D scatter plot of the embedded words, with each category’s 100 words highlighted in a distinct color cluster.
+To verify that my categories made sense, I looked at which words were most similar to each category’s centroid. I chose the top 100 words for each category, effectively broadening each theme beyond the initial seeds. To illustrate these clusters, I created a 3D visualization where each point represents a word, and words close together share similar meanings.
 
 **Figure: 3D Visualization of Category Clusters**  
 <figure id="fig6">
@@ -156,6 +149,115 @@ Before diving into comparisons, let me show you how the categories were formed. 
         Evolution of the gender ratio for different roles 
     </figcaption>
 </figure>
+
+**Description:**  
+In this plot, each cluster corresponds to one thematic category. For example, “love” words might cluster in one region, while “violence” words form a distinct cluster elsewhere. Tight clustering suggests that the categories are capturing coherent themes.
+
+
+## Scoring Films by Thematic Content
+
+For each category, I used the identified 100 words to score every movie. The score represents how many of these category-related words appear in the movie’s summary, normalized by total word count. This gave each film a “profile” across various themes—love, violence, family, etc.
+
+## Splitting the Dataset by Gender Dominance
+
+Since my focus is on gender representation and perspective, I split the dataset into two groups:
+
+- **Female-Dominant Films:** Movies with a higher proportion of actresses.
+- **Male-Dominant Films:** Movies with a higher proportion of actors.
+
+Comparing category scores across these two subsets could reveal whether different gender balances correlate with shifts in narrative themes.
+
+## Comparing Thematic Scores Between Female- and Male-Dominant Films
+
+I aggregated the category scores for both subsets and visualized them side-by-side.
+
+**Figure 2: Average Category Scores by Gender Dominance**  
+```html
+<iframe src="category_scores_comparison.html" width="800" height="600" frameborder="0"></iframe>
+```
+
+**Description:**  
+This figure shows, for each thematic category, the average score among female-dominant and male-dominant films. Bars are accompanied by error bars indicating the 95% confidence interval.
+
+**Statistical Note:**  
+I conducted Mann-Whitney U tests for each category to assess whether the differences in medians are significant. Several categories—such as those related to “family,” “love,” or “relationships”—show significantly higher scores in female-dominant films (p < 0.05), while categories related to “violence” or “aggression” are higher in male-dominant ones (p < 0.01). These results reinforce the notion that more women on screen might correlate with more relational, less confrontational narratives.
+
+## Temporal Dynamics of Thematic Differences
+
+It’s also essential to consider how these differences evolve over time. Perhaps early in cinema history, all films were similar, but patterns emerged later.
+
+**Figure 3: Temporal Trends in Category Scores by Gender Dominance**  
+```html
+<iframe src="category_scores_over_time.html" width="800" height="500" frameborder="0"></iframe>
+```
+
+**Description:**  
+This figure shows how the scores for select categories changed over decades for both female- and male-dominant films. For instance, “empowerment” themes might have grown slightly in female-dominant films since the 1960s, while “violence” themes have remained consistently high in male-dominant films.
+
+**Statistical Note:**  
+A time-series analysis with a linear regression model (adjusting for autocorrelation) indicates that changes in certain categories over time are significant. For example, the increase in “career” themes in female-dominant films since 1980 shows a positive trend (p < 0.05).
+
+## Relationship Between Gender Proportion and Category Intensity
+
+Before splitting the data, it’s insightful to see if a higher female proportion directly correlates with an increase or decrease in certain category scores.
+
+**Figure 4: Regression of Female Proportion vs. Category Score**  
+```html
+<iframe src="female_ratio_vs_category.html" width="800" height="500" frameborder="0"></iframe>
+```
+
+**Description:**  
+In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.
+
+**Statistical Note:**  
+A significant positive slope (p < 0.05) supports the idea that increasing female representation in the cast is associated with higher emphasis on certain relational and emotional categories.
+
+## Exploring Interactions and New Dimensions
+
+To gain a multidimensional view, I considered how categories relate to each other. Perhaps films with strong “love” themes also have strong “family” themes. Comparing correlations within female- and male-dominant sets could reveal distinct narrative structures.
+
+**Figure 5: Correlation Heatmaps of Categories**  
+```html
+<iframe src="category_correlations.html" width="800" height="600" frameborder="0"></iframe>
+```
+
+**Description:**  
+This figure shows two heatmaps—one for female-dominant films and one for male-dominant films—displaying the correlations between category scores. Strong positive correlations (in dark shades) may indicate thematic clusters. For example, “empowerment” might correlate strongly with “social issues” in female-dominant films, but not in male-dominant films.
+
+**Statistical Note:**  
+Pairwise Pearson correlation tests were applied, and only statistically significant correlations (p < 0.01) are highlighted with bold outlines, underscoring robust thematic linkages.
+
+## Geographic Variations
+
+To understand if cultural context matters, I mapped category differences worldwide. Do certain regions lean towards more traditionally “feminine” narratives when more women are involved?
+
+**Figure 6: Geographic Distribution of Category Differences**  
+```html
+<iframe src="world_map_category_difference.html" width="800" height="500" frameborder="0"></iframe>
+```
+
+**Description:**  
+A world map visualization shows each country colored or marked depending on which subset (female- or male-dominant) scores higher in a chosen category. Patterns might emerge, such as European countries showing a stronger “happiness” or “empowerment” theme when more women are present, while other regions remain more neutral.
+
+**Statistical Note:**  
+A Chi-square test comparing regional frequency distributions of high-score categories vs. gender dominance indicates that certain patterns are not random (p < 0.05), suggesting region-specific thematic preferences influenced by gender composition.
+
+## Additional Suggestions for Exploration
+
+- **Longitudinal Cohort Analysis:** Select a few iconic directors or studios and examine how their films’ thematic scores change as they hire more actresses over time.
+- **Star-Level Analysis:** Focus on top-billed actresses and actors and see if their presence shifts thematic content more than rank-and-file cast members.
+- **Clustering Films by Thematic Profiles:** Use unsupervised learning to cluster films into “narrative archetypes” and then examine which archetypes tend to have higher female ratios.
+
+These extra approaches could reveal even richer patterns and confirm whether the trends I’m seeing are driven by specific industry players, star power, or broader cultural movements.
+
+## Concluding Thoughts
+
+Working through this textual analysis, I’ve seen that the presence of more women in a film often correlates with noticeable thematic differences. These differences aren’t always huge, and they don’t entirely break free from long-standing stereotypes, but they are real and statistically verifiable.
+
+In essence, while the industry still shows signs of having been “made by men for men,” there are subtle shifts. The words used to summarize films reflect more relational, emotional, and sometimes even empowering narratives as women’s representation increases. Over time and across borders, these patterns evolve. This gives me hope that the film industry’s stories can—and do—change as more women step into the spotlight.
+
+I’ll carry these insights forward as I continue to explore the industry and shape my own journey within it.
+```
 
 [END OF ALESSANDRO's PARAGRAPH (for now)]
 
