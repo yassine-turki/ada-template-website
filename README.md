@@ -47,25 +47,33 @@ One thing I learned from ADA is that valuable information can be hidden in the d
     </figcaption>
 </figure>
 
-I find it amusing that the most "inclusive" genres (still bellow 50%) happens to be 'Kitchen sink realism'. The other genres are not much better: "Adult", or even "Melodrama". Obviously, women only complain and work in the kitchen :(.  I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved "Spaghetti Western". 
+I find it amusing that the most "inclusive" genres (still bellow 50% of actresses in the cast) happens to be 'Kitchen sink realism'. The other genres are not much better: "Adult", or even "Melodrama". Obviously, women only complain and work in the kitchen :(.  I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved "Spaghetti Western". 
  
-…
-
-Looking at [movie genre] definitely does not seem very attractive as they are only [share of women]. However, [movie genre] seems already a bit more favorable for women. It’s not really my type though. 
-
-
 Definitely, my future does not look very bright from this perspective. But with my theater background, I am sure I will be able to get good acting roles, and be as famous as Scarlett Johansson. Actually I am wondering how top actresses are represented ? Do they have actual big roles, and play in many big movies ? How long are they ‘stars’ ? Do they continue to be celebrities once they are older ? 
 
 And so I went and explored my data. The problem was that I didn’t have a way to identify the main actors from my dataset. Nothing stops me, so I went online, found out that IMDB had a list of main roles, downloaded all the data, cleaned it, merged it, until I had a nice dataframe, one that would satisfy Maria and Bob. 
 
-I directly looked at the distribution of main roles. I found out that men have [...LOLO] more first roles than women. But actually I saw before that there are much more actors than actresses. But even proportionally, I see that men still have [...LOLO] more first roles than women. Crazy. Figure …LOLO shows the evolution of the women having 1st, 2nd and 3rd roles. and figure …LOLO analyses the evolution by genre. 
+I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#fig3">Figure 3</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
-…
+<figure id="fig3">
+    <iframe src="percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Evolution of the gender ratio for different roles 
+    </figcaption>
+</figure>
+Let me investigate which genre is most welcoming for my career as an all time star. <a href="#fig4">Figure 4</a> shows the most and least inclusive genre for first roles actors/actresses. 
 
-Clearly, women are not present in war films. But they are present in erotic movies 🙄
-We can also see that…
+<figure id="fig4">
+    <iframe src="first_role_genre.html" width="800" height="500" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Most and least inclusive genre for first role
+    </figcaption>
+</figure>
+So either I am a feminist, or a pornstar. That's not very nice...
 
-But then I thought : “perhaps the big films have more women actresses”. I didn’t really know why. I had this feeling. Perhaps it was just some hope. 
+So clearly, women are not present in war films. But they are present in erotic movies 🙄
+
+But then I thought : "perhaps the distribution is skewed due to the high number of 'small budget films'". "Perhaps the big films have more women actresses”. I didn’t really know why. I had this feeling. Perhaps it was just some hope. 
 
 So I kept only the films with the highest revenue (above …OSKAR), and looked at the distribution of roles actresses/actors. Figure …OSKAR shows the share of women with roles in these movies. 
 
