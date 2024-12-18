@@ -64,7 +64,7 @@ I directly looked at the distribution of main roles. I found out that men have 7
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#fig4">Figure 4</a> shows the most and least inclusive genre for first roles actors/actresses. 
 
 <figure id="fig4">
-    <iframe src="first_role_genre.html" width="800" height="500" frameborder="0"></iframe>
+    <iframe src="first_role_genre.html" width="700" height="400" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genre for first role
     </figcaption>
