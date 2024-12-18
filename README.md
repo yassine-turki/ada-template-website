@@ -150,10 +150,12 @@ By comparing average category scores between these two subsets, I could detect m
 Before diving into comparisons, let me show you how the categories were formed. Below is a 3D scatter plot of the embedded words, with each category’s 100 words highlighted in a distinct color cluster.
 
 **Figure: 3D Visualization of Category Clusters**  
-*Placeholder for a 3D plot that shows words embedded in a vector space, with clusters corresponding to each category.*  
-```html
-<iframe src="3D_visualization_categories.html" width="800" height="600" frameborder="0"></iframe>
-
+<figure id="fig6">
+    <iframe src="centroids_top_words_plot.html" width="800" height="500" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Evolution of the gender ratio for different roles 
+    </figcaption>
+</figure>
 
 [END OF ALESSANDRO's PARAGRAPH (for now)]
 
