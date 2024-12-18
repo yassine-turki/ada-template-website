@@ -114,6 +114,47 @@ Ok let’s try a different approach to see the topics of movies with a large pro
 [START OF ALESSANDRO's PARAGRAPH]
 Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant. [ALESSANDRO]
 
+## Delving into the Language of Film
+
+Up to now, I’ve focused on the tangible aspects of representation: the ratio of actors to actresses, how main roles are distributed, and how these patterns evolve over time or differ by region. But there’s another dimension to consider—*how* stories are told. Do movies featuring more actresses differ thematically and emotionally from those dominated by actors? To answer this, I turned to the actual summaries of the films.
+
+### Text Preprocessing and Thematic Categories
+
+First, I needed to prepare the textual data. I took all the movie summaries and performed several preprocessing steps:  
+- Converted all text to lowercase  
+- Lemmatized words (reducing them to their dictionary form)  
+- Removed extremely common and extremely rare words, ensuring that only meaningful, distinctive terms remained
+
+This cleaned dataset allowed me to compare films on a more even linguistic footing.
+
+To quantify the narrative content, I defined a series of **categories**—themes like love, violence, family, happiness, sadness, career, and so on. Each category corresponded to a set of seed words that captured its essence. I then used a language model to embed these words into a vector space. By computing the centroid of these embeddings, I obtained a semantic “center” for each category.
+
+### Identifying Category-Related Words
+
+From each category’s centroid, I selected the 100 words in the entire corpus most similar to that centroid (based on cosine similarity). These 100 words effectively broaden the category from a handful of seed terms to a richer semantic field. For instance, the “violence” category might include words like *“attack,” “battle,” “murder,” “gunfight,”* and so forth.
+
+After determining these sets of 100 words per category, I counted how frequently they appeared in each film’s summary. Dividing by the total number of words in the summary gave me a normalized “score” representing how strongly each category was represented in that movie’s narrative.
+
+### Splitting the Dataset and Statistical Testing
+
+Since my ultimate goal was to see whether narratives differ in films featuring more women than men, I split the dataset into two subsets:  
+1. **Female-Dominant Films**: Movies with a higher proportion of actresses  
+2. **Male-Dominant Films**: Movies with a higher proportion of actors
+
+By comparing average category scores between these two subsets, I could detect meaningful thematic shifts. To ensure that any observed differences were not due to chance, I ran **statistical tests** (e.g., Mann-Whitney U tests) to verify the significance of these differences. Many categories showed statistically significant variations, reinforcing the idea that gender composition does correlate with narrative themes.
+
+### Visualizing the Results
+
+#### 1. Category Embedding Visualization
+
+Before diving into comparisons, let me show you how the categories were formed. Below is a 3D scatter plot of the embedded words, with each category’s 100 words highlighted in a distinct color cluster.
+
+**Figure: 3D Visualization of Category Clusters**  
+*Placeholder for a 3D plot that shows words embedded in a vector space, with clusters corresponding to each category.*  
+```html
+<iframe src="3D_visualization_categories.html" width="800" height="600" frameborder="0"></iframe>
+
+
 [END OF ALESSANDRO's PARAGRAPH (for now)]
 
 [START OF YASSINE's PARAGRAPH]
