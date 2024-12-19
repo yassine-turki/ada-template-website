@@ -101,7 +101,7 @@ How are women represented ?
 Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
 
 <figure id="sta">
-    <img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:800px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:700px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Percentage of females in movie cast across all movies in CMU Dataset
     </figcaption>
@@ -135,7 +135,7 @@ Ah, well that’s not super encouraging either… It seems films with mostly wom
 Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
 
 <figure id="sta">
-    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:800px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Sentiment analysis across various topics between male and female dominant films
     </figcaption>
