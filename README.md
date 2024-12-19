@@ -32,12 +32,14 @@ I went on the internet and downloaded the information of all movies from wikiped
 
 I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#actress_num_movie">Figure 1</a>) globally but also by regions (figure…OSKAR)
 
-<figure id="actress_num_movie">
-    <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Ratio of actresses and number of movies by year
-    </figcaption>
-</figure>
+<div style="display: flex; align-items: center;">
+    <figure id="actress_num_movie" style="margin-right: 20px; text-align: center;">
+        <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
+        <figcaption style="text-align: center; margin-top: 4px;">
+            Ratio of actresses and number of movies by year
+        </figcaption>
+    </figure>
+</div>
 
 The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.
 
