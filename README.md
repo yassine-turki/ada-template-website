@@ -111,18 +111,18 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
     </figure>
     <figure id="ma" style="text-align: center;">
         <img src="figs/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;">
-        <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds female characters</figcaption>
+        <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds male characters</figcaption>
     </figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
     <figure id="fv" style="text-align: center;">
-        <img src="figs/female_adj_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
+        <img src="figs/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
         <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds female characters</figcaption>
     </figure>
     <figure id="mv" style="text-align: center;">
-        <img src="figs/male_adj_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
-        <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds female characters</figcaption>
+        <img src="figs/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
+        <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds male characters</figcaption>
     </figure>
 </div>
 
