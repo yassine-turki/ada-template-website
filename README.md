@@ -30,7 +30,7 @@ I was disappointed to see that women are much less present than men. But I did n
 
 
 <figure id="fig1">
-    <iframe src="Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
+    <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Ratio of actresses and number of movies by year
     </figcaption>
@@ -41,7 +41,7 @@ The proportion of women in films increases very slightly from the 60s. In 1960 t
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="fig2">
-    <iframe src="top_genres.html" width="900" height="600" frameborder="0"></iframe>
+    <iframe src="figs/top_genres.html" width="900" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genres. 
     </figcaption>
@@ -56,7 +56,7 @@ And so I went and explored my data. The problem was that I didn’t have a way t
 I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#fig3">Figure 3</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
 <figure id="fig3">
-    <iframe src="percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0"></iframe>
+    <iframe src="figs/percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Evolution of the gender ratio for different roles 
     </figcaption>
@@ -64,7 +64,7 @@ I directly looked at the distribution of main roles. I found out that men have 7
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#fig4">Figure 4</a> shows the most and least inclusive genre for first roles actors/actresses. 
 
 <figure id="fig4">
-    <iframe src="first_role_genre.html" width="700" height="400" frameborder="0"></iframe>
+    <iframe src="figs/first_role_genre.html" width="700" height="400" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genre for first role
     </figcaption>
@@ -144,7 +144,7 @@ To verify that my categories made sense, I looked at which words were most simil
 
 **Figure: 3D Visualization of Category Clusters**  
 <figure id="fig6">
-    <iframe src="centroids_top_words_plot_3d.html" width="800" height="500" frameborder="0"></iframe>
+    <iframe src="figs/centroids_top_words_plot_3d.html" width="800" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Evolution of the gender ratio for different roles 
     </figcaption>
@@ -173,7 +173,7 @@ I aggregated the category scores for both subsets and visualized them side-by-si
 
 **Figure 2: Average Category Scores by Gender Dominance**  
 ```html
-<iframe src="category_scores_comparison.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="figs/category_scores_comparison.html" width="800" height="600" frameborder="0"></iframe>
 ```
 
 **Description:**  
@@ -188,7 +188,7 @@ It’s also essential to consider how these differences evolve over time. Perhap
 
 **Figure 3: Temporal Trends in Category Scores by Gender Dominance**  
 ```html
-<iframe src="category_scores_over_time.html" width="800" height="500" frameborder="0"></iframe>
+<iframe src="figs/category_scores_over_time.html" width="800" height="500" frameborder="0"></iframe>
 ```
 
 **Description:**  
@@ -203,7 +203,7 @@ Before splitting the data, it’s insightful to see if a higher female proportio
 
 **Figure 4: Regression of Female Proportion vs. Category Score**  
 ```html
-<iframe src="female_ratio_vs_category.html" width="800" height="500" frameborder="0"></iframe>
+<iframe src="figs/female_ratio_vs_category.html" width="800" height="500" frameborder="0"></iframe>
 ```
 
 **Description:**  
@@ -218,7 +218,7 @@ To gain a multidimensional view, I considered how categories relate to each othe
 
 **Figure 5: Correlation Heatmaps of Categories**  
 ```html
-<iframe src="category_correlations.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="figs/category_correlations.html" width="800" height="600" frameborder="0"></iframe>
 ```
 
 **Description:**  
@@ -233,7 +233,7 @@ To understand if cultural context matters, I mapped category differences worldwi
 
 **Figure 6: Geographic Distribution of Category Differences**  
 ```html
-<iframe src="world_map_category_difference.html" width="800" height="500" frameborder="0"></iframe>
+<iframe src="figs/world_map_category_difference.html" width="800" height="500" frameborder="0"></iframe>
 ```
 
 **Description:**  
