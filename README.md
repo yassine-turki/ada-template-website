@@ -309,6 +309,67 @@ I’ll carry these insights forward as I continue to explore the industry and sh
 
 \[END OF ALESSANDRO's PARAGRAPH (for now)\]
 
-\[START OF YASSINE's PARAGRAPH\] Giving a voice to women: looking at directors I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? What if I ever want to direct a movie? What are my chances? I’ll first look at general gender ratio across directors \[...YASSINE\] Ouch… Ok but has it improved over the years? \[...YASSINE\] And are there some countries with higher proportions of female directors? Should I really move countries? \[...YASSINE\] And what about the number of movies per director? Does that change across genders? \[...YASSINE\] And what about the casting choices of Directors? Female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias? \[...YASSINE\]
+[START OF YASSINE's PARAGRAPH]
+# Giving a voice to women: looking at directors
+I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? What if I ever want to direct a movie? What are my chances? 
+I’ll first look at general gender ratio across directors
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_gender_distribution_and_proportions" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Director / Gender distribution
+    </figcaption>
+</figure>
+
+And what about the number of movies per director? Does that change across genders? 
+<figure id="fig2">
+    <iframe src="figs/directors_html/average_movie_count_per_director.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Average movie count per gender
+    </figcaption>
+</figure>
+
+Ouch… Ok, I see that there is only 10 % of women directors in the dataset. Maybe in previous years the industry was more male dominated? How has this proportion evolve over the years? 
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Director Gender Representation by Year
+    </figcaption>
+</figure>
+
+Looks like it increased a little bit compared to the 70s, but we are still a minority! Maybe I should consider geographical location as well. 
+Are there some countries with higher proportions of female directors? Should I really move countries? 
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_countries.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Director Gender Representation by Country
+    </figcaption>
+</figure>
+
+I guess I will not move. But which genre has the most women directors? Should I try to specialize in one particular genre?
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_gender_by_genre.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Director Gender Representation by Genre
+    </figcaption>
+</figure>
+
+Well, I am still not ready to revolutionize the movie industry as a director. But I would like to work on it, and learn from a mentor that would encourage me and propell me into changing the cinema field. My dream now is to land a main role in a movie. Would I have more chances to land the role if the director is a woman?
+And what about the casting choices of Directors? Do female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias? 
+
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Male Female Representation in Main Roles (Top 3) by Director Gender
+    </figcaption>
+</figure>
+
+
+
+<figure id="fig2">
+    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Male Female Representation by Director Gender for First, Second, and Third role
+    </figcaption>
+</figure>
 
 Looking at other societal issues : what’s been done ?
