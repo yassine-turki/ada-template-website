@@ -28,7 +28,7 @@ It struck me, as I never could imagine such a strong statement could be true. In
 
 ### Starting from the beginning
 
-I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure \[OSKAR...\] shows the ratio of actors vs actresses by world region. …
+I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure \[OSKAR...\] shows the ratio of actresses in each of the world regions. …
 
 I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#fig1">Figure 1</a>) globally but also by regions (figure…OSKAR)
 
