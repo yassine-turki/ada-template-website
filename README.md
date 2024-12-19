@@ -100,7 +100,12 @@ And is there a correlation between an actress's age and the revenue she generate
 How are women represented ? 
 Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
 
-[... ALIX graph from docs]
+<figure id="sta">
+    <img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:800px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Percentage of females in movie cast across all movies in CMU Dataset
+    </figcaption>
+</figure>
 
 Well, it is highly skewed right, but that’s no real surprise anymore based on my previous analyses… However, this gives me an idea! I’ll split films by character gender ratio and look at the descriptive adjectives and verbs used in films with more men than women and vice versa through NLP methods. A ratio of 1:2 seems like a good cutoff point. I’ll also remove words that show up for both male dominant and female dominant films at similar frequencies.
 
