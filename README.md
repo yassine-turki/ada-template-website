@@ -93,6 +93,7 @@ If I start to get older, will I remain famous and loved by all my fans ? So I lo
         Begining and ending career age for actors and actressses
     </figcaption>
 </figure>
+
 So basically, actresses start their career, on average, at 27 while men start at 32 years old. I think that means actresses are only good if they are still young and pretty. I can also see a disparity when the actors/actresses retire. Men finish their career much older than women and also stay longer (10 year for men while only 8 years for women). 
 
 But then I thought, perhaps famous actresses play longer… Let me check. <a href="#fig5">Figure 6</a> shows the age distribution for first role actors/actresses. 
