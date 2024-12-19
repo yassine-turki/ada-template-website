@@ -122,7 +122,7 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
 Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
 
 <figure id="sta">
-    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:600px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Sentiment analysis across various topics between male and female dominant films
     </figcaption>
@@ -178,9 +178,17 @@ For each category, I used the identified 100 words to score every movie. The sco
 Before splitting the data, it’s insightful to see if a higher female proportion directly correlates with an increase or decrease in certain category scores.
 
 **Figure 4: Regression of Female Proportion vs. Category Score**
+<figure id="fig7">
+    <img src="figs/sentiment_score_femeale_percentage.png" alt="Regression of Female Proportion vs. Category Score" width="800" height="500">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Evolution of the gender ratio for different roles
+    </figcaption>
+</figure>
 
-![**Description: The figure shows the top 5 sentiments score as a function of female percentage**\
-In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.](sentiment_score_femeale_percentage.png)
+
+**Description: The figure shows the top 5 sentiments score as a function of female percentage**\
+In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.
+
 
 ## Splitting the Dataset by Gender Dominance
 
@@ -197,10 +205,15 @@ Comparing category scores across these two subsets could reveal whether differen
 
 I aggregated the category scores for both subsets and visualized them side-by-side.
 
-**Figure 2: Average Category Scores by Gender Dominance**  
-```html
-<iframe src="figs/category_scores_comparison.html" width="800" height="600" frameborder="0"></iframe>
-```
+**Figure 2: Average Category Scores by Gender Dominance**
+
+<figure id="fig2">
+    <iframe src="figs/interactive_sentiment_comparison.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Average category scores by gender dominance
+    </figcaption>
+</figure>
+
 
 **Description:**  
 This figure shows, for each thematic category, the average score among female-dominant and male-dominant films. Bars are accompanied by error bars indicating the 95% confidence interval.
@@ -235,57 +248,33 @@ I conducted Mann-Whitney U tests for each category to assess whether the differe
 It’s also essential to consider how these differences evolve over time. Perhaps early in cinema history, all films were similar, but patterns emerged later.
 
 **Figure 3: Temporal Trends in Category Scores by Gender Dominance**  
-```html
-<iframe src="figs/category_scores_over_time.html" width="800" height="500" frameborder="0"></iframe>
-```
+<figure id="fig2">
+    <iframe src="figs/sentiments_time.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Average category scores by gender dominance
+    </figcaption>
+</figure>
 
 **Description:**  
 This figure shows how the scores for select categories changed over decades for both female- and male-dominant films. For instance, “empowerment” themes might have grown slightly in female-dominant films since the 1960s, while “violence” themes have remained consistently high in male-dominant films.
 
-**Statistical Note:**  
-A time-series analysis with a linear regression model (adjusting for autocorrelation) indicates that changes in certain categories over time are significant. For example, the increase in “career” themes in female-dominant films since 1980 shows a positive trend (p < 0.05).
-
-## Relationship Between Gender Proportion and Category Intensity
-
-Before splitting the data, it’s insightful to see if a higher female proportion directly correlates with an increase or decrease in certain category scores.
-
-**Figure 4: Regression of Female Proportion vs. Category Score**  
-```html
-<iframe src="figs/female_ratio_vs_category.html" width="800" height="500" frameborder="0"></iframe>
-```
-
-**Description:**  
-In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.
-
-**Statistical Note:**  
-A significant positive slope (p < 0.05) supports the idea that increasing female representation in the cast is associated with higher emphasis on certain relational and emotional categories.
-
-## Exploring Interactions and New Dimensions
-
-To gain a multidimensional view, I considered how categories relate to each other. Perhaps films with strong “love” themes also have strong “family” themes. Comparing correlations within female- and male-dominant sets could reveal distinct narrative structures.
-
-**Figure 5: Correlation Heatmaps of Categories**  
-```html
-<iframe src="figs/category_correlations.html" width="800" height="600" frameborder="0"></iframe>
-```
-
-**Description:**  
-This figure shows two heatmaps—one for female-dominant films and one for male-dominant films—displaying the correlations between category scores. Strong positive correlations (in dark shades) may indicate thematic clusters. For example, “empowerment” might correlate strongly with “social issues” in female-dominant films, but not in male-dominant films.
-
-**Statistical Note:**  
-Pairwise Pearson correlation tests were applied, and only statistically significant correlations (p < 0.01) are highlighted with bold outlines, underscoring robust thematic linkages.
 
 ## Geographic Variations
 
 To understand if cultural context matters, I mapped category differences worldwide. Do certain regions lean towards more traditionally “feminine” narratives when more women are involved?
 
 **Figure 6: Geographic Distribution of Category Differences**  
-```html
-<iframe src="figs/world_map_category_difference.html" width="800" height="500" frameborder="0"></iframe>
-```
+<figure id="fig2">
+    <iframe src="figs/geographic_sentiment_score.html" width="800" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Average category scores by gender dominance
+    </figcaption>
+</figure>
 
 **Description:**\
 A world map visualization shows each country colored or marked depending on which subset (female- or male-dominant) scores higher in a chosen category. Patterns might emerge, such as European countries showing a stronger “happiness” or “empowerment” theme when more women are present, while other regions remain more neutral.
+
+## Observations
 
 Working through this textual analysis, I’ve seen that the presence of more women in a film often correlates with noticeable thematic differences. These differences aren’t always huge, and they don’t entirely break free from long-standing stereotypes, but they are real and statistically verifiable.
 

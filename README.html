@@ -62,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <section id="introduction" class="level3">
 <h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
-<p>(some AI generated photo?) My names is Angelina, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.<br>
+<p>(some AI generated photo?) My name is Angelina, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.<br>
 A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”.</p>
 <p>It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, I will be able to determine whether my friend was right or not.</p>
 </section>
@@ -71,19 +71,19 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 <p>I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio in France which was of [OSKAR…]. I also took the opportunity to look at various countries. Figure [OSKAR…] shows the ratio of actors vs actresses by world region. …</p>
 <p>I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#fig1">Figure 1</a>) globally but also by regions (figure…OSKAR)</p>
 <figure id="fig1" class="figure">
-<iframe src="Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0">
+<iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Ratio of actresses and number of movies by year</p>
+Ratio of actresses and number of movies by year
 </figcaption>
 </figure>
 <p>The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.</p>
 <p>One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#fig2">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.</p>
 <figure id="fig2" class="figure">
-<iframe src="top_genres.html" width="900" height="600" frameborder="0">
+<iframe src="figs/top_genres.html" width="900" height="600" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Most and least inclusive genres.</p>
+Most and least inclusive genres.
 </figcaption>
 </figure>
 <p>I find it amusing that the most “inclusive” genres (still bellow 50% of actresses in the cast) happens to be ‘Kitchen sink realism’. The other genres are not much better: “Adult”, or even “Melodrama”. Obviously, women only complain and work in the kitchen :(. I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved “Spaghetti Western”.</p>
@@ -91,18 +91,18 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 <p>And so I went and explored my data. The problem was that I didn’t have a way to identify the main actors from my dataset. Nothing stops me, so I went online, found out that IMDB had a list of main roles, downloaded all the data, cleaned it, merged it, until I had a nice dataframe, one that would satisfy Maria and Bob.</p>
 <p>I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#fig3">Figure 3</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.</p>
 <figure id="fig3" class="figure">
-<iframe src="percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0">
+<iframe src="figs/percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Evolution of the gender ratio for different roles</p>
+Evolution of the gender ratio for different roles
 </figcaption>
 </figure>
 <p>Let me investigate which genre is most welcoming for my career as an all time star. <a href="#fig4">Figure 4</a> shows the most and least inclusive genre for first roles actors/actresses.</p>
 <figure id="fig4" class="figure">
-<iframe src="first_role_genre.html" width="700" height="400" frameborder="0">
+<iframe src="figs/first_role_genre.html" width="700" height="400" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Most and least inclusive genre for first role</p>
+Most and least inclusive genre for first role
 </figcaption>
 </figure>
 <p>So either I am a feminist, or a pornstar. That’s not very nice…</p>
@@ -112,11 +112,40 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 <p>[Discussion on graph]</p>
 <p>But if I become a star, how long will I remain a star ? (Angelina dreaming) If I start to get older, will I remain famous and loved by all my fans ? Figure […LOLO] shows the starting career of actresses and actors and their ending career. […LOLO] But perhaps, famous actresses play longer… Let me check. […LOLO] Big films generate big revenues. So my question now is whether big films have lots of actresses, and if there is a link between the two. So I went on and once more did the analysis, and as we see […ALIX] Not so much… But then, clinging on for hope I decided to check whether, perhaps, having a woman in the first role would lead to higher revenue for a given film. Or would it be the opposite? [Oskar graph 1] But does this change across countries? Perhaps there are some countries where having an actress in first role is correlated with higher revenue? [Oskar graph 1] And what if I did become the biggest star of my country!? How much would I earn? Is the gender wage gap between the biggest stars of cinema different across countries? Let’s see [Oskar graph 2] Hmmm… But to be a star, I need to make sure the country I’m in actually produces movies. Let’s see which countries produce the most movies. We’ll only look at movies that list revenue to weed out very small films.</p>
 <p>But is there any relation between the general gender ratio of a film and the revenue generated? […ALIX] And is there a correlation between an actress’s age and the revenue she generates? [… ALIX] How are women represented ? Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.</p>
-<p>[… ALIX graph from docs]</p>
+<figure id="sta" class="figure">
+<img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:700px; height:auto; display:block; margin:0 auto;" class="figure-img">
+<figcaption style="text-align: center; margin-top: 4px;">
+Percentage of females in movie cast across all movies in CMU Dataset
+</figcaption>
+</figure>
 <p>Well, it is highly skewed right, but that’s no real surprise anymore based on my previous analyses… However, this gives me an idea! I’ll split films by character gender ratio and look at the descriptive adjectives and verbs used in films with more men than women and vice versa through NLP methods. A ratio of 1:2 seems like a good cutoff point. I’ll also remove words that show up for both male dominant and female dominant films at similar frequencies.</p>
-<p>[… ALIX graphs from docs (with words)]</p>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
+<pre><code>&lt;figure id="fa" style="text-align: center;"&gt;
+    &lt;img src="figs/female_adj_wordcloud.png" alt="Most Common Adjectives for Female Characters" style="width:400px; height:auto;"&gt;
+    &lt;figcaption style="margin-top: 8px;"&gt;Most Common adjective lemmas for movies with more than two thirds female characters&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure id="ma" style="text-align: center;"&gt;
+    &lt;img src="figs/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;"&gt;
+    &lt;figcaption style="margin-top: 8px;"&gt;Most Common adjective lemmas for movies with more than two thirds male characters&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</div>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
+<pre><code>&lt;figure id="fv" style="text-align: center;"&gt;
+    &lt;img src="figs/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;"&gt;
+    &lt;figcaption style="margin-top: 8px;"&gt;Most Common verb lemmas for movies with more than two thirds female characters&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure id="mv" style="text-align: center;"&gt;
+    &lt;img src="figs/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;"&gt;
+    &lt;figcaption style="margin-top: 8px;"&gt;Most Common verb lemmas for movies with more than two thirds male characters&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</div>
 <p>Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio</p>
-<p>[… ALIX other graph]</p>
+<figure id="sta" class="figure">
+<img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;" class="figure-img">
+<figcaption style="text-align: center; margin-top: 4px;">
+Sentiment analysis across various topics between male and female dominant films
+</figcaption>
+</figure>
 <p>[START OF ALESSANDRO’s PARAGRAPH] Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant. [ALESSANDRO]</p>
 </section>
 </section>
@@ -146,10 +175,10 @@ A friend of mine told me: “Movies are made by men for men. Women are just here
 <p><strong>Figure: 3D Visualization of Category Clusters</strong><br>
 </p>
 <figure id="fig6" class="figure">
-<iframe src="centroids_top_words_plot_3d.html" width="800" height="500" frameborder="0">
+<iframe src="figs/centroids_top_words_plot_3d.html" width="800" height="500" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Sentiment score between male and female dominant movies</p>
+Evolution of the gender ratio for different roles
 </figcaption>
 </figure>
 <p><strong>Description:</strong><br>
@@ -163,14 +192,15 @@ In this plot, each cluster corresponds to one thematic category. For example, �
 <section id="relationship-between-gender-proportion-and-category-intensity" class="level2">
 <h2 class="anchored" data-anchor-id="relationship-between-gender-proportion-and-category-intensity">Relationship Between Gender Proportion and Category Intensity</h2>
 <p>Before splitting the data, it’s insightful to see if a higher female proportion directly correlates with an increase or decrease in certain category scores.</p>
-<p><strong>Figure 4: Regression of Female Proportion vs.&nbsp;Category Score</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="sentiment_score_femeale_percentage.png" class="img-fluid figure-img"></p>
-<figcaption><strong>Description: The figure shows the top 5 sentiments score as a function of female percentage</strong><br>
-In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.</figcaption>
+<strong>Figure 4: Regression of Female Proportion vs.&nbsp;Category Score</strong>
+<figure id="fig7" class="figure">
+<img src="figs/sentiment_score_femeale_percentage.png" alt="Regression of Female Proportion vs. Category Score" width="800" height="500" class="figure-img">
+<figcaption style="text-align: center; margin-top: 4px;">
+Evolution of the gender ratio for different roles
+</figcaption>
 </figure>
-</div>
+<p><strong>Description: The figure shows the top 5 sentiments score as a function of female percentage</strong><br>
+In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.</p>
 </section>
 <section id="splitting-the-dataset-by-gender-dominance" class="level2">
 <h2 class="anchored" data-anchor-id="splitting-the-dataset-by-gender-dominance">Splitting the Dataset by Gender Dominance</h2>
@@ -185,13 +215,12 @@ In this scatter plot, each film is represented by a point. The x-axis is the pro
 <section id="comparing-thematic-scores-between-female--and-male-dominant-films" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-thematic-scores-between-female--and-male-dominant-films">Comparing Thematic Scores Between Female- and Male-Dominant Films</h2>
 <p>I aggregated the category scores for both subsets and visualized them side-by-side.</p>
-<p><strong>Figure: Average Category Scores by Gender Dominance</strong><br>
-</p>
-<figure id="fig6" class="figure">
-<iframe src="interactive_sentiment_comparison.html" width="800" height="500" frameborder="0">
+<p><strong>Figure 2: Average Category Scores by Gender Dominance</strong></p>
+<figure id="fig2" class="figure">
+<iframe src="figs/interactive_sentiment_comparison.html" width="800" height="600" frameborder="0">
 </iframe>
 <figcaption style="text-align: center; margin-top: 4px;">
-<p>Evolution of the gender ratio for different roles</p>
+Average category scores by gender dominance
 </figcaption>
 </figure>
 <p><strong>Description:</strong><br>
@@ -361,20 +390,35 @@ I conducted Mann-Whitney U tests for each category to assess whether the differe
 <section id="temporal-dynamics-of-thematic-differences" class="level2">
 <h2 class="anchored" data-anchor-id="temporal-dynamics-of-thematic-differences">Temporal Dynamics of Thematic Differences</h2>
 <p>It’s also essential to consider how these differences evolve over time. Perhaps early in cinema history, all films were similar, but patterns emerged later.</p>
-<p><strong>Figure 3: Temporal Trends in Category Scores by Gender Dominance</strong></p>
-<p><iframe src="sentiments_time.html" width="800" height="600" frameborder="0"></p>
+<strong>Figure 3: Temporal Trends in Category Scores by Gender Dominance</strong><br>
+
+<figure id="fig2" class="figure">
+<iframe src="figs/sentiments_time.html" width="800" height="600" frameborder="0">
 </iframe>
-</p><p><strong>Description:</strong><br>
-This figure shows how the scores for select categories changed over the years for both female- and male-dominant films. For instance, “empowerment” themes might have grown slightly in female-dominant films since the 1960s, while “violence” themes have remained consistently high in male-dominant films.</p>
+<figcaption style="text-align: center; margin-top: 4px;">
+Average category scores by gender dominance
+</figcaption>
+</figure>
+<p><strong>Description:</strong><br>
+This figure shows how the scores for select categories changed over decades for both female- and male-dominant films. For instance, “empowerment” themes might have grown slightly in female-dominant films since the 1960s, while “violence” themes have remained consistently high in male-dominant films.</p>
 </section>
 <section id="geographic-variations" class="level2">
 <h2 class="anchored" data-anchor-id="geographic-variations">Geographic Variations</h2>
 <p>To understand if cultural context matters, I mapped category differences worldwide. Do certain regions lean towards more traditionally “feminine” narratives when more women are involved?</p>
-<p><strong>Figure 6: Geographic Distribution of Category Differences</strong></p>
-<iframe src="geographic_sentiment_score.html" width="800" height="600" frameborder="0">
+<strong>Figure 6: Geographic Distribution of Category Differences</strong><br>
+
+<figure id="fig2" class="figure">
+<iframe src="figs/geographic_sentiment_score.html" width="800" height="600" frameborder="0">
 </iframe>
+<figcaption style="text-align: center; margin-top: 4px;">
+Average category scores by gender dominance
+</figcaption>
+</figure>
 <p><strong>Description:</strong><br>
 A world map visualization shows each country colored or marked depending on which subset (female- or male-dominant) scores higher in a chosen category. Patterns might emerge, such as European countries showing a stronger “happiness” or “empowerment” theme when more women are present, while other regions remain more neutral.</p>
+</section>
+<section id="observations" class="level2">
+<h2 class="anchored" data-anchor-id="observations">Observations</h2>
 <p>Working through this textual analysis, I’ve seen that the presence of more women in a film often correlates with noticeable thematic differences. These differences aren’t always huge, and they don’t entirely break free from long-standing stereotypes, but they are real and statistically verifiable.</p>
 <p>In essence, while the industry still shows signs of having been “made by men for men,” there are subtle shifts. The words used to summarize films reflect more relational, emotional, and sometimes even empowering narratives as women’s representation increases. Over time and across borders, these patterns evolve. This gives me hope that the film industry’s stories can—and do—change as more women step into the spotlight.</p>
 <p>I’ll carry these insights forward as I continue to explore the industry and shape my own journey within it.</p>
