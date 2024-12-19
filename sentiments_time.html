@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Image Selector</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  #image-container {
+    margin-top: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<select id="imageSelect">
+  <option value="images/Adventure_trend.png" selected>Adventure</option>
+  <option value="images/Aggression_trend.png" >Aggression</option>
+  <option value="images/Career_trend.png" >Career</option>
+  <option value="images/Conflict_resolution_trend.png" >Conflict_resolution</option>
+  <option value="images/Emotional_complexity_trend.png" >Emotional_complexity</option>
+  <option value="images/Empowerment_trend.png" >Empowerment</option>
+  <option value="images/Family_trend.png" >Family</option>
+  <option value="images/Fear_trend.png" >Fear</option>
+  <option value="images/Happiness_trend.png" >Happiness</option>
+  <option value="images/Heroism_trend.png" >Heroism</option>
+  <option value="images/Love_trend.png" >Love</option>
+  <option value="images/Mystery_trend.png" >Mystery</option>
+  <option value="images/Relationships_trend.png" >Relationships</option>
+  <option value="images/Sadness_trend.png" >Sadness</option>
+  <option value="images/Social_issues_trend.png" >Social_issues</option>
+  <option value="images/Technology_trend.png" >Technology</option>
+  <option value="images/Violence_trend.png" >Violence</option>
+</select>
+
+<div id="image-container">
+  <img id="displayImage" src="images/Adventure_trend.png" alt="Selected Image"/>
+</div>
+
+<script>
+  const imageSelect = document.getElementById('imageSelect');
+  const displayImage = document.getElementById('displayImage');
+
+  imageSelect.addEventListener('change', function() {
+    const selectedSrc = imageSelect.value;
+    displayImage.src = selectedSrc;
+  });
+</script>
+
+</body>
+</html>
