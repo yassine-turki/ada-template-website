@@ -129,6 +129,12 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
 Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. 
 Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
 
+<figure id="sta">
+    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:800px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Sentiment analysis across various topics between male and female dominant films
+    </figcaption>
+</figure>
 
 
 [START OF ALESSANDRO's PARAGRAPH]
