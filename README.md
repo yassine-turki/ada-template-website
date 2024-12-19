@@ -84,7 +84,31 @@ So I kept only the films with the highest revenue (above …OSKAR), and looked a
 
 \[Discussion on graph\]
 
-But if I become a star, how long will I remain a star ? (Angelina dreaming) If I start to get older, will I remain famous and loved by all my fans ? Figure \[...LOLO\] shows the starting career of actresses and actors and their ending career. \[...LOLO\] But perhaps, famous actresses play longer… Let me check. \[...LOLO\] Big films generate big revenues. So my question now is whether big films have lots of actresses, and if there is a link between the two. So I went on and once more did the analysis, and as we see \[...ALIX\] Not so much… But then, clinging on for hope I decided to check whether, perhaps, having a woman in the first role would lead to higher revenue for a given film. Or would it be the opposite? \[Oskar graph 1\] But does this change across countries? Perhaps there are some countries where having an actress in first role is correlated with higher revenue? \[Oskar graph 1\] And what if I did become the biggest star of my country!? How much would I earn? Is the gender wage gap between the biggest stars of cinema different across countries? Let’s see \[Oskar graph 2\] Hmmm… But to be a star, I need to make sure the country I’m in actually produces movies. Let’s see which countries produce the most movies. We’ll only look at movies that list revenue to weed out very small films.
+But if I become a star, how long will I remain a star ? (Angelina dreaming) 
+If I start to get older, will I remain famous and loved by all my fans ? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#fig5">figure 5</a>)
+
+<figure id="fig5">
+    <iframe src="figs/average_age_of_actors.html" width="700" height="400" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Begining and ending career age for actors and actressses
+    </figcaption>
+</figure>
+So basically, actresses start their career, on average, at 27 while men start at 32 years old. I think that means actresses are only good if they are still young and pretty. I can also see a disparity when the actors/actresses retire. Men finish their career much older than women and also stay longer (10 year for men while only 8 years for women). 
+
+But then I thought, perhaps famous actresses play longer… Let me check. <a href="#fig5">Figure 6</a> shows the age distribution for first role actors/actresses. 
+
+<figure id="fig6">
+    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="400" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Begining and ending career age for first role actors and actressses
+    </figcaption>
+</figure>
+We see that first role actors play longer. Indeed, if we look at age 50, there are almost no actresses with first role, while men still have these roles. The most recurring age for first role actresses is 26 while it is 36 for men. That is not incredible for my career. I got to start soon. 
+
+But then I thought that movies which generate high revenues might be more inclusive because they need reach out to more people. 
+
+
+So my question now is whether big films have lots of actresses, and if there is a link between the two. So I went on and once more did the analysis, and as we see \[...LoLo\] Not so much… But then, clinging on for hope I decided to check whether, perhaps, having a woman in the first role would lead to higher revenue for a given film. Or would it be the opposite? \[Oskar graph 1\] But does this change across countries? Perhaps there are some countries where having an actress in first role is correlated with higher revenue? \[Oskar graph 1\] And what if I did become the biggest star of my country!? How much would I earn? Is the gender wage gap between the biggest stars of cinema different across countries? Let’s see \[Oskar graph 2\] Hmmm… But to be a star, I need to make sure the country I’m in actually produces movies. Let’s see which countries produce the most movies. We’ll only look at movies that list revenue to weed out very small films.
 
 But is there any relation between the general gender ratio of a film and the revenue generated? \[...ALIX\] And is there a correlation between an actress's age and the revenue she generates? \[... ALIX\] How are women represented ? Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
 
