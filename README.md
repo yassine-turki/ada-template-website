@@ -135,7 +135,7 @@ Ah, well that’s not super encouraging either… It seems films with mostly wom
 Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
 
 <figure id="sta">
-    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:600px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Sentiment analysis across various topics between male and female dominant films
     </figcaption>
