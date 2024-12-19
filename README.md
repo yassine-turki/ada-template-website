@@ -88,7 +88,7 @@ But if I become a star, how long will I remain a star ? (Angelina dreaming)
 If I start to get older, will I remain famous and loved by all my fans ? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 5</a>)
 
 <figure id="av_age_actors">
-    <iframe src="figs/average_age_of_actors.html" width="700" height="400" frameborder="0"></iframe>
+    <iframe src="figs/average_age_of_actors.html" width="800" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Begining and ending career age for actors and actressses
     </figcaption>
