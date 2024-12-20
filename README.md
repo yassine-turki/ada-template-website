@@ -48,7 +48,7 @@ One thing I learned from ADA is that valuable information can be hidden in the d
     </figure>
 </div>
 
-I find it amusing that the most "inclusive" genres (still bellow 50% of actresses in the cast) happens to be 'Kitchen sink realism'. The other genres are not much better: "Adult", or even "Melodrama". Obviously, women only complain and work in the kitchen :(. I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. It is sad because I loved "Spaghetti Western".
+I find it amusing that the most "inclusive" genres after feminism films (all bellow 50% of actresses in the cast) happens to be 'softcore porn', 'sexploitation', or even 'kitchen sink realism'. The other genres are not much better: "Erotica drama", or "Pornographic movie". In case I want to become a pornstar, I know where to go 🫠 pfff. I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. 
 
 Definitely, my future does not look very bright from this perspective. But with my theater background, I am sure I will be able to get good acting roles, and be as famous as Scarlett Johansson. Actually I am wondering how top actresses are represented ? Do they have actual big roles, and play in many big movies ? How long are they ‘stars’ ? Do they continue to be celebrities once they are older ?
 
