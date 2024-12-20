@@ -2,7 +2,7 @@
 
 <p style="font-size: 10px;">
 
-Warning message. Angelina is a fictitious character created for the sake of the project.
+Warning message. Louise is a fictitious character created for the sake of the project.
 
 </p>
 
@@ -15,7 +15,7 @@ Warning message. Angelina is a fictitious character created for the sake of the 
         Dall-e generated picture of Anglina
     </figcaption>
 </figure>
-My name is Angelina, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
+My name is Louise, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
 A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”. 
 
 It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, I will be able to determine whether my friend was right or not.
@@ -82,7 +82,7 @@ So I kept only the films with the highest revenue (above …OSKAR), and looked a
 
 \[Discussion on graph\]
 
-But if I become a star, how long will I remain a star? (Angelina dreaming) 
+But if I become a star, how long will I remain a star? (Louise dreaming) 
 If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 5</a>)
 
 <figure id="av_age_actors">
