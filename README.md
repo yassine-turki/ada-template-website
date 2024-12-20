@@ -1,22 +1,23 @@
+<head>
+    <style>
+        figure {
+            counter-increment: figure;
+        }
+        figcaption:before {
+            content: "Figure " counter(figure) ": ";
+            font-weight: bold;
+        }
+    </style>
+</head>
+
 # Data Story
 
-<p style="font-size: 8px;">
+<p style="font-size: 10px;">
 
 Warning message. Angelina is a fictitious character created for the sake of the project.
 
 </p>
 
-```{=html}
-<style>
-    figure {
-        counter-increment: figure;
-    }
-    figcaption:before {
-        content: "Figure " counter(figure) ": ";
-        font-weight: bold;
-    }
-</style>
-```
 
 ### Introduction
 
