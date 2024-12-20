@@ -112,13 +112,13 @@ So my question now is whether big films have lots of actresses, and if there is 
 But is there any relation between the general gender ratio of a film and the revenue generated?
 
 <figure id="sta">
-    <img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Boxplot graph of revenue for films 
     </figcaption>
 </figure>
 
-Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 And after running some hypothesis tests we see get a pearson coefficient of $-0.072$ with p value $4\times 10^{-10}$ and a spearman coefficient of $-0.067$ with p value $8\times10^{-9}$. So the correlation is not very strong, but it is statistically significant.
+Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 There is a linear dropoff in revenue from Female proportions above around 60%. After running some hypothesis tests we see get a pearson coefficient of -0.072 with p value 4e-10 and a spearman coefficient of -0.067 with p value 8x10e-9. So the correlation is not very strong, but it is statistically significant.
 
 And is there a correlation between an actress's age and the revenue of the movie in which she plays? \[... ALIX\] 
 
