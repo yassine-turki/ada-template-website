@@ -118,7 +118,12 @@ But is there any relation between the general gender ratio of a film and the rev
     </figcaption>
 </figure>
 
-And is there a correlation between an actress's age and the revenue she generates? \[... ALIX\] How are women represented ?
+Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 And after running some hypothesis tests we see get a pearson coefficient of $-0.072$ with p value $4\times 10^{-10}$ and a spearman coefficient of $-0.067$ with p value $8\times10^{-9}$. So the correlation is not very strong, but it is statistically significant.
+
+And is there a correlation between an actress's age and the revenue of the movie in which she plays? \[... ALIX\] 
+
+
+## How are women represented ?
 
 
 Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
