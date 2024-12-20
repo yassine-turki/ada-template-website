@@ -82,7 +82,7 @@ Let me investigate which genre is most welcoming for my career as an all time st
     <iframe 
         src="figs/first_role_genre.html" 
         width="100%" 
-        height="100%" 
+        height="500" 
         style="border: none; display: block; overflow: hidden;" 
         scrolling="no">
     </iframe>
@@ -239,7 +239,7 @@ To validate the coherence of the defined categories, I analyzed which words were
 
 <figure id="fig6">
 
-<iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0">
+<iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0" scrolling="no">
 
 </iframe>
 
@@ -256,7 +256,7 @@ In this plot, each cluster corresponds to one thematic category. For example, �
 
 ## Scoring Films by Thematic Content
 
-Now that the methods have been defined i've calculated the semantic score of each category for every movie summary in the dataset. I want to compare how these themes varies depending on how many women are present in the movies
+Now that the methods have been defined I've calculated the semantic score of each category for every movie summary in the dataset. I want to compare how these themes varies depending on how many women are present in the movies
 
 ## Relationship Between Gender Proportion and Category Intensity
 
@@ -303,7 +303,7 @@ I aggregated the category scores for both subsets and visualized them side-by-si
 
 <figure id="fig2">
 
-<iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0">
+<iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0" scrolling="no">
 
 </iframe>
 
@@ -367,7 +367,7 @@ It’s also essential to consider how these differences evolve over time. Perhap
 
 <figure id="fig2">
 
-<iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0">
+<iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0" scrolling="no">
 
 </iframe>
 
@@ -399,7 +399,7 @@ This world map visualization shows each country colored or marked depending on w
 
 <figure id="fig2">
 
-<iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0">
+<iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0" scrolling="no">
 
 </iframe>
 
@@ -424,7 +424,6 @@ Working through this textual analysis, the trends reveal that the presence of mo
 Despite the industry’s historical bias of being "made by men for men," the data shows encouraging signs of change. Films with higher female participation are increasingly exploring complex themes such as emotional depth, social issues, and empowerment, especially in settings where female-led narratives challenge conventional roles. These patterns, evolving over time and across different cultural landscapes, underscore a dynamic shift in how stories are told, reflecting broader societal changes.
 
 I’ll carry these insights forward as I continue to explore the industry and shape my own journey within it.
-
 # Giving a voice to women: looking at directors
 
 I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? Are women directors more inclusive? Do they also suffer inequalities? What if I ever want to direct a movie? What are my chances? 
