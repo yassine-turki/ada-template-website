@@ -214,49 +214,75 @@ To ensure I was comparing films on an even footing, I began with a thorough prep
 -   **Lowercasing:** All text was converted to lowercase.
 -   **Lemmatization:** Words were reduced to their dictionary form (e.g., “running” → “run”).
 -   **Filtering Common/Rare Terms:** Extremely common and extremely rare words were removed to focus on words that carry meaningful distinctions.
+-   **Enghlish language:** only words in English were kept
+-   **Person:** All name of persons were removed as they don't add meaning to the theme analysis
 
 This cleaned corpus set the stage for identifying thematic categories.
 
-## Defining and Identifying Thematic Categories
+### Defining and Identifying Thematic Categories
 
-I created a set of **thematic categories**, each reflecting a concept like “love,” “violence,” “family,” “career,” “empowerment,” and more. Each category started as a seed list of words that define its core meaning. Using a language model, I embedded these seed words into a vector space and computed a “centroid” for each category—a sort of semantic average that represents the heart of that concept.
+I have developed a series of thematic categories that capture key concepts such as "love," "violence," "family," "career," and "empowerment." The process began with creating a seed list of words that encapsulate the essence of each category. Utilizing the language model (all-MiniLM-L6-v2), I transformed these seed words into vectors within a semantic space and calculated a "centroid" for each category. This centroid serves as a semantic average, representing the core of each concept.
+
+### Quantifying Thematic Presence in Movie Summaries
+
+To measure the prevalence of each thematic category within movie summaries, I considered a method that counts the occurrences of words associated with each category. To define these category-specific words, I utilized the centroids as reference points and identified words similar to them by calculating cosine similarity between their vectors. This process involved selecting the most similar words from a pool of unique words found across all summaries. For each category, I selected the top *n* closest words to its centroid. The presence of these words in a summary is then quantified, forming a score based on their relative frequency compared to the total word count. This scoring method can be mathematically represented as follows:
+
+$\text{Category Score} = \frac{\text{Count of Category-Specific Words in Summary}}{\text{Total Words in Summary}}$
+
+This score gives us an idea of the sentiment of the movie summaries, but to distinguish it from the sentiment analysis and given the fact that it is based on semantic similarities it will be called semantic score.
 
 ### Visualizing Category Word Clusters
 
-To verify that my categories made sense, I looked at which words were most similar to each category’s centroid. I chose the top 100 words for each category, effectively broadening each theme beyond the initial seeds. To illustrate these clusters, I created a 3D visualization where each point represents a word, and words close together share similar meanings.
+To validate the coherence of the defined categories, I analyzed which words were most closely related to the centroids of each category. By selecting the top 100 words for each category, I expanded each theme beyond its initial seed list. To visually represent these relationships, I created a 3D plot where each point signifies a word, with proximity indicating semantic similarity. This visualization helps confirm that the categories are logically structured, with clustered words sharing related meanings.
 
 **Figure: 3D Visualization of Category Clusters**\
 
 <figure id="fig6">
-    <iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Evolution of the gender ratio for different roles 
-    </figcaption>
+
+<iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0">
+
+</iframe>
+
+<figcaption style="text-align: center; margin-top: 4px;">
+
+Evolution of the gender ratio for different roles
+
+</figcaption>
+
 </figure>
 
 **Description:**\
-In this plot, each cluster corresponds to one thematic category. For example, “love” words might cluster in one region, while “violence” words form a distinct cluster elsewhere. Tight clustering suggests that the categories are capturing coherent themes.
+In this plot, each cluster corresponds to one thematic category. For example, “love” words might cluster in one region, while “violence” words form a distinct cluster elsewhere. Tight clustering suggests that the categories are capturing coherent themes. We can also see how some themes are intertwined between each other, like aggression and violence.
 
 ## Scoring Films by Thematic Content
 
-[LITTLE NOTE TO REPRHASE 1ST SENTENCE] For each category, I used the identified 100 words to score every movie. The score represents how many of these category-related words appear in the movie’s summary, normalized by total word count. This gave each film a “profile” across various themes—love, violence, family, etc.
+Now that the methods have been defined i've calculated the semantic score of each category for every movie summary in the dataset. I want to compare how these themes varies depending on how many women are present in the movies
 
 ## Relationship Between Gender Proportion and Category Intensity
 
-Before splitting the data, it’s insightful to see if a higher female proportion directly correlates with an increase or decrease in certain category scores.
+Continuing my exploration into how gender dynamics influence film narratives, I've focused on five thematic categories: Family, Relationships, Love, Violence, and Happiness. These were selected due to their variability and relevance in understanding narrative shifts as female representation changes.
 
 **Figure 4: Regression of Female Proportion vs. Category Score**
+
 <figure id="fig7">
-    <img src="figs/sentiment_score_femeale_percentage.png" alt="Regression of Female Proportion vs. Category Score" width="1000" height="500">
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Evolution of the gender ratio for different roles
-    </figcaption>
+
+<img src="figs/sentiment_score_femeale_percentage.png" alt="Regression of Female Proportion vs. Category Score" width="1000" height="500"/>
+
+<figcaption style="text-align: center; margin-top: 4px;">
+
+Semantic score vs Female percentage
+
+</figcaption>
+
 </figure>
 
+**Visualizing Trends**: Using regression analysis, I plotted these categories against the percentage of female actors. This visual approach reveals distinct trends:
 
-**Description: The figure shows the top 5 sentiments score as a function of female percentage**\
-In this scatter plot, each film is represented by a point. The x-axis is the proportion of female roles, and the y-axis is a category’s score (e.g., “relationships”). The regression line shows whether more women correlate with higher “relationships” themes.
+-   **Family, Relationships, and Love** show a clear upward trend with more female actors, suggesting these themes are emphasized more in films with greater female involvement.
 
+-   **Violence** trends downwards, indicating less focus on violent themes as female representation increases.
+
+-   **Happiness** shows a slight increase, suggesting its portrayal may not be influenced by gender dynamics.ù
 
 ## Splitting the Dataset by Gender Dominance
 
@@ -264,8 +290,8 @@ From the previous graph we could already see that the scores can change dependin
 
 Since my focus is on gender representation and perspective, I split the dataset into two groups:
 
--   **Female-Dominant Films:** Movies with a higher proportion of actresses.
--   **Male-Dominant Films:** Movies with a higher proportion of actors.
+-   **Female-Dominant Films:** Movies with a higher proportion of actresses (more than 2/3).
+-   **Male-Dominant Films:** Movies with a higher proportion of actors (more than 2/3).
 
 Comparing category scores across these two subsets could reveal whether different gender balances correlate with shifts in narrative themes.
 
@@ -276,77 +302,126 @@ I aggregated the category scores for both subsets and visualized them side-by-si
 **Figure 2: Average Category Scores by Gender Dominance**
 
 <figure id="fig2">
-    <iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Average category scores by gender dominance
-    </figcaption>
+
+<iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0">
+
+</iframe>
+
+<figcaption style="text-align: center; margin-top: 4px;">
+
+Average category scores by gender dominance
+
+</figcaption>
+
 </figure>
 
-
-**Description:**  
+**Description:**\
 This figure shows, for each thematic category, the average score among female-dominant and male-dominant films. Bars are accompanied by error bars indicating the 95% confidence interval.
+
+### Observations from the Sentiment Analysis
+
+#### Higher Scores in Female-Dominated Films:
+
+-   **Family and Relationships**: Categories that typically emphasize interpersonal connections and familial bonds show significantly higher scores in films with at least 66% female presence. This suggests a thematic focus on exploring complex interpersonal dynamics in female-dominated films.
+-   **Empowerment and Social Issues**: These themes also record higher sentiment scores in films with more female actors, possibly reflecting a narrative emphasis on empowerment and societal challenges.
+
+#### Similar Scores Across Different Gender Proportions:
+
+-   **Happiness and Sadness**: The sentiment scores for happiness and sadness are relatively consistent, regardless of gender proportion. This indicates a uniform approach to portraying these emotions across films with varying gender distributions.
+
+#### Higher Scores in Male-Dominated Films:
+
+-   **Aggression and Violence**: Notably higher in films with less than 33% female presence, indicating a possible trend where male-dominated films might focus more on themes of conflict and physical confrontation.
+-   **Adventure and Technology**: These categories also tend to score higher in films dominated by male actors, which may suggest a genre influence where traditionally male-targeted genres like sci-fi and action prioritize such elements.
 
 **Statistical Note:**
 
 It's clear how especially for some categories the difference between male- and female-dominant movies is drastic, but it's better to be sure.\
-I conducted Mann-Whitney U tests for each category to assess whether the differences in medians are significant. Several categories—such as those related to “family,” “love,” or “relationships”—show significantly higher scores in female-dominant films (p \< 0.05), while categories related to “violence” or “aggression” are higher in male-dominant ones (p \< 0.01). These results reinforce the notion that more women on screen might correlate with more relational, less confrontational narratives.
+I conducted Mann-Whitney U tests for each category to assess whether the differences in medians are significant. Several categories—such as those related to “family,” “love,” or “relationships”—show significantly higher scores in female-dominant films, while categories related to “violence” or “aggression” are higher in male-dominant ones. These results reinforce the notion that more women on screen might correlate with more relational, less confrontational narratives.
 
 | Category | Female Mean | Male Mean | p-value | Significant? | Higher in |
-|------------|------------|------------|------------|------------|------------|
-| Love | 0.02 | 0.01 | 0.000 | Yes | Female Majority |
-| Aggression | 0.01 | 0.01 | 0.000 | Yes | Male Majority |
-| Violence | 0.02 | 0.03 | 0.000 | Yes | Male Majority |
-| Family | 0.06 | 0.03 | 0.000 | Yes | Female Majority |
-| Happiness | 0.01 | 0.01 | 0.000 | Yes | Female Majority |
-| Sadness | 0.01 | 0.00 | 0.000 | Yes | Female Majority |
-| Fear | 0.01 | 0.00 | 0.001 | Yes | Female Majority |
-| Empowerment | 0.01 | 0.01 | 0.000 | Yes | Male Majority |
-| Relationships | 0.04 | 0.02 | 0.000 | Yes | Female Majority |
-| Career | 0.02 | 0.02 | 0.000 | Yes | Male Majority |
-| Social_issues | 0.01 | 0.01 | 0.000 | Yes | Male Majority |
-| Emotional_complexity | 0.01 | 0.01 | 0.001 | Yes | Female Majority |
-| Heroism | 0.01 | 0.01 | 0.000 | Yes | Male Majority |
-| Conflict_resolution | 0.01 | 0.02 | 0.000 | Yes | Male Majority |
-| Adventure | 0.01 | 0.01 | 0.000 | Yes | Female Majority |
-| Mystery | 0.01 | 0.02 | 0.000 | Yes | Male Majority |
-| Technology | 0.01 | 0.01 | 0.000 | Yes | Female Majority |
+|----|----|----|----|----|----|
+| Love | 0.021 | 0.011 | 1.51e-124 | Yes | Female Majority |
+| Aggression | 0.006 | 0.008 | 8.43e-38 | Yes | Male Majority |
+| Violence | 0.019 | 0.028 | 1.17e-123 | Yes | Male Majority |
+| Family | 0.057 | 0.035 | 8.07e-176 | Yes | Female Majority |
+| Happiness | 0.012 | 0.007 | 6.32e-40 | Yes | Female Majority |
+| Sadness | 0.006 | 0.004 | 1.18e-15 | Yes | Female Majority |
+| Fear | 0.005 | 0.005 | 7.29e-04 | Yes | Female Majority |
+| Empowerment | 0.006 | 0.006 | 1.87e-35 | Yes | Male Majority |
+| Relationships | 0.039 | 0.024 | 1.65e-151 | Yes | Female Majority |
+| Career | 0.021 | 0.023 | 5.67e-18 | Yes | Male Majority |
+| Social_issues | 0.006 | 0.007 | 3.04e-30 | Yes | Male Majority |
+| Emotional_complexity | 0.010 | 0.008 | 5.61e-04 | Yes | Female Majority |
+| Heroism | 0.005 | 0.006 | 6.86e-46 | Yes | Male Majority |
+| Conflict_resolution | 0.014 | 0.018 | 2.37e-57 | Yes | Male Majority |
+| Adventure | 0.013 | 0.013 | 1.50e-05 | Yes | Female Majority |
+| Mystery | 0.014 | 0.019 | 1.43e-51 | Yes | Male Majority |
+| Technology | 0.009 | 0.009 | 8.07e-09 | Yes | Female Majority |
 
 ## Temporal Dynamics of Thematic Differences
 
 It’s also essential to consider how these differences evolve over time. Perhaps early in cinema history, all films were similar, but patterns emerged later.
 
-**Figure 3: Temporal Trends in Category Scores by Gender Dominance**  
+**Figure 3: Temporal Trends in Category Scores by Gender Dominance**\
+
 <figure id="fig2">
-    <iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Average category scores by gender dominance
-    </figcaption>
+
+<iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0">
+
+</iframe>
+
+<figcaption style="text-align: center; margin-top: 4px;">
+
+Average category scores by gender dominance
+
+</figcaption>
+
 </figure>
 
-**Description:**  
-This figure shows how the scores for select categories changed over decades for both female- and male-dominant films. For instance, “empowerment” themes might have grown slightly in female-dominant films since the 1960s, while “violence” themes have remained consistently high in male-dominant films.
+The evolving trends in cinema's thematic portrayals reveal nuanced shifts that might reflect broader societal changes and values. Notably, adventure themes show an intriguing divergence; they are increasingly depicted in films with more female presence, suggesting a break from traditional gender roles, whereas these themes are declining in male-dominated films. Fear is also rising in films with more female actors, maintaining relative stability in male-led narratives, which could indicate a growing exploration of vulnerability in female-driven stories.
 
+Interestingly, the sentiment surrounding social issues is on a decline for both genders, perhaps reflecting a transient phase in the societal interest or cinematic focus on these topics. Technology, on the other hand, sees a sharp increase in both female and male-dominated films, mirroring the rising prominence of tech in everyday life and possibly indicating a universal appeal of sci-fi and technological advancements.
+
+The portrayal of sadness and empowerment shows gendered trends, with sadness increasing significantly more in female-dominated films, perhaps pointing to a deeper emotional exploration. Empowerment, conversely, is increasing more noticeably in films led by males, which might suggest differing approaches to depicting strength and agency across gender lines. The sentiment scores for career themes remain stable in female-centric films but are climbing in those with male leads, possibly highlighting traditional views of career-oriented narratives as more aligned with male protagonists.
+
+Overall, these trends suggest a slow but steady diversification of film content with increasing female involvement, moving towards richer emotional landscapes and greater social relevance, while male-dominated films continue to reinforce conventional action-oriented narratives. Well this is not promising...
 
 ## Geographic Variations
 
+I'm not convinced yet, I want to dig deeper! What about the geographical distribution of these themes? Maybe it's not the same everywhere in the world.
+
 To understand if cultural context matters, I mapped category differences worldwide. Do certain regions lean towards more traditionally “feminine” narratives when more women are involved?
 
-**Figure 6: Geographic Distribution of Category Differences**  
+This world map visualization shows each country colored or marked depending on which subset (female- or male-dominant) scores higher in a chosen category. Patterns might emerge, such as European countries showing a stronger “love” or “empowerment” theme when more women are present, while other regions remain more neutral.
+
+**Figure 6: Geographic Distribution of Category Differences**\
+
 <figure id="fig2">
-    <iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Average category scores by gender dominance
-    </figcaption>
+
+<iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0">
+
+</iframe>
+
+<figcaption style="text-align: center; margin-top: 4px;">
+
+Average category scores by gender dominance
+
+</figcaption>
+
 </figure>
 
-**Description:**\
-A world map visualization shows each country colored or marked depending on which subset (female- or male-dominant) scores higher in a chosen category. Patterns might emerge, such as European countries showing a stronger “happiness” or “empowerment” theme when more women are present, while other regions remain more neutral.
+Indeed, regional variations add another layer of complexity to the global cinematic landscape. Notably, love, traditionally perceived as more prevalent in female-dominated films, actually features more prominently in male-led films in North America. This regional exception challenges the general trend and suggests a cultural specificity in storytelling. Conversely, violence remains a universally male-dominated theme, confirming its global association with traditional male narratives.
+
+Interestingly, aggression, which is typically higher in films with more male influence, shows a higher presence in female-dominated movies in specific countries like Spain, Germany, and Russia. This could indicate unique cultural narratives or film-making styles that empower female roles in unexpected ways. Family, paints the whole map pink, indicating its prevalence in female-led films, shows notable exceptions such as in Sweden, where it might not follow the typical pattern.
+
+A part from this the trends seems to be in line with what said before.
 
 ## Observations
 
-Working through this textual analysis, I’ve seen that the presence of more women in a film often correlates with noticeable thematic differences. These differences aren’t always huge, and they don’t entirely break free from long-standing stereotypes, but they are real and statistically verifiable.
+Working through this textual analysis, the trends reveal that the presence of more women in films often correlates with distinct thematic shifts, particularly in regions where cultural nuances influence narrative styles. While these shifts don’t completely dismantle long-standing stereotypes, they are real, statistically significant, and vary from region to region.
 
-In essence, while the industry still shows signs of having been “made by men for men,” there are subtle shifts. The words used to summarize films reflect more relational, emotional, and sometimes even empowering narratives as women’s representation increases. Over time and across borders, these patterns evolve. This gives me hope that the film industry’s stories can—and do—change as more women step into the spotlight.
+Despite the industry’s historical bias of being "made by men for men," the data shows encouraging signs of change. Films with higher female participation are increasingly exploring complex themes such as emotional depth, social issues, and empowerment, especially in settings where female-led narratives challenge conventional roles. These patterns, evolving over time and across different cultural landscapes, underscore a dynamic shift in how stories are told, reflecting broader societal changes.
 
 I’ll carry these insights forward as I continue to explore the industry and shape my own journey within it.
 
