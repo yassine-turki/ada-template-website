@@ -6,22 +6,17 @@ Warning message. Louise is a fictitious character created for the sake of the pr
 
 </p>
 
+
 ### Introduction
 
 <figure id="sta">
-
-<img src="figs/Angelina.webp" alt="Angelina" style="width:300px; height:auto; display:block; margin:0 auto;"/>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Dall-e generated picture of Louise
-
-</figcaption>
-
+    <img src="figs/Angelina.webp" alt="Angelina" style="width:300px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Dall-e generated picture of Louise
+    </figcaption>
 </figure>
-
-My name is Louise, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.\
-A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”.
+My name is Louise, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
+A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”. 
 
 It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, will I be able to determine whether my friend was right or not.
 
@@ -29,43 +24,37 @@ It struck me, as I never could imagine such a strong statement could be true. In
 
 I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio, which is 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced.
 
-::: {style="display: flex; justify-content: center; align-items: center;"}
-```         
-<figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
-    <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
-</figure>
-```
-:::
+<div style="display: flex; justify-content: center; align-items: center;">
+    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
+        <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
+    </figure>
+</div>
 
 I was disappointed to see that women are much less present than men. I was especially disappointed by these proportions in countries carrying the twentieth-century movie legacy, like the USA and Russia, with slightly better scores in countries around France. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#actress_num_movie">Figure 2</a>) globally.
 
-::: {style="display: flex; align-items: left;"}
-```         
-<figure id="actress_num_movie" style="margin-right: 20px; text-align: left;">
-    <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Ratio of actresses and number of movies by year
-    </figcaption>
-</figure>
-```
-:::
+<div style="display: flex; align-items: left;">
+    <figure id="actress_num_movie" style="margin-right: 20px; text-align: left;">
+        <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <figcaption style="text-align: center; margin-top: 4px;">
+            Ratio of actresses and number of movies by year
+        </figcaption>
+    </figure>
+</div>
 
 The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.
 
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#inclusive_genre">Figure 3</a> shows the list of genre with the highest and lowest gender ratio.
 
-::: {style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;"}
-```         
-<figure id="inclusive_genre" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
-    <iframe src="figs/top_genres.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Most and least inclusive genres.
-    </figcaption>
-</figure>
-```
-:::
+<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
+    <figure id="inclusive_genre" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
+        <iframe src="figs/top_genres.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <figcaption style="text-align: center; margin-top: 4px;">
+            Most and least inclusive genres.
+        </figcaption>
+    </figure>
+</div>
 
-I find it amusing that the most "inclusive" genres after feminism films (all bellow 50% of actresses in the cast) happens to be 'softcore porn', 'sexploitation', or even 'kitchen sink realism'. The other genres are not much better: "Erotica drama", or "Pornographic movie". In case I want to become a pornstar, I know where to go 🫠 pfff. I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true.
+I find it amusing that the most "inclusive" genres after feminism films (all bellow 50% of actresses in the cast) happens to be 'softcore porn', 'sexploitation', or even 'kitchen sink realism'. The other genres are not much better: "Erotica drama", or "Pornographic movie". In case I want to become a pornstar, I know where to go 🫠 pfff. I will definitly need to see how women are represented in the film industry (will do later). On the other hand, the least inclusive genres are all those including violence or war. Woman are more tender that is true. 
 
 Definitely, my future does not look very bright from this perspective. But with my theater background, I am sure I will be able to get good acting roles, and be as famous as Scarlett Johansson. Actually I am wondering how top actresses are represented ? Do they have actual big roles, and play in many big movies ? How long are they ‘stars’ ? Do they continue to be celebrities once they are older ?
 
@@ -74,99 +63,78 @@ And so I went and explored my data. The problem was that I didn’t have a way t
 I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 4</a> shows the evolution of women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
 <figure id="ev_gender_ratio_roles" style="margin: 0; padding: 0; overflow: hidden;">
-
-<iframe src="figs/percentage_evolution_of_actresses.html" width="100%" height="500" style="border: none; display: block; overflow: hidden;" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Evolution of the gender ratio for different roles
-
-</figcaption>
-
+    <iframe 
+        src="figs/percentage_evolution_of_actresses.html" 
+        width="100%" 
+        height="500" 
+        style="border: none; display: block; overflow: hidden;" 
+        scrolling="no">
+    </iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Evolution of the gender ratio for different roles 
+    </figcaption>
 </figure>
+
 
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
 <figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 700px;">
-
-<iframe src="figs/first_role_genre.html" width="100%" height="100%" style="border: none; display: block; overflow: hidden;" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Most and least inclusive genre for first role
-
-</figcaption>
-
+    <iframe 
+        src="figs/first_role_genre.html" 
+        width="100%" 
+        height="100%" 
+        style="border: none; display: block; overflow: hidden;" 
+        scrolling="no">
+    </iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Most and least inclusive genre for first role
+    </figcaption>
 </figure>
 
 So either I am a feminist, or a pornstar. That's not very nice...
 
 So clearly, women are not present in war films. But they are present in erotic movies 🙄
 
-But if I become a star, how long will I remain a star? (Louise dreaming) If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
+But if I become a star, how long will I remain a star? (Louise dreaming) 
+If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
 
 <figure id="av_age_actors">
-
-<iframe src="figs/average_age_of_actors.html" width="1000" height="500" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Begining and ending career age for actors and actresses
-
-</figcaption>
-
+    <iframe src="figs/average_age_of_actors.html" width="1000" height="500" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Begining and ending career age for actors and actressses
+    </figcaption>
 </figure>
 
-So basically, actresses start their career, on average, at 27 while men start at 32 years old. I think that means actresses are only good if they are still young and pretty. I can also see a disparity when the actors/actresses retire. Men finish their career much older than women and also stay longer (10 year for men while only 8 years for women).
+So basically, actresses start their career, on average, at 27 while men start at 32 years old. I think that means actresses are only good if they are still young and pretty. I can also see a disparity when the actors/actresses retire. Men finish their career much older than women and also stay longer (10 year for men while only 8 years for women). 
 
-But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 7</a> shows the age distribution for first role actors/actresses.
+But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 7</a> shows the age distribution for first role actors/actresses. 
 
 <figure id="first_age">
-
-<iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Begining and ending career age for first role actors and actresses
-
-</figcaption>
-
+    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Begining and ending career age for first role actors and actressses
+    </figcaption>
 </figure>
+We see that first role actors play longer. Indeed, if we look at age 50, there are almost no actresses with first role, while men still have these roles. The most recurring age for first role actresses is 26 while it is 36 for men. That is not incredible for my career. I got to start soon. 
 
-We see that first role actors play longer. Indeed, if we look at age 50, there are almost no actresses with first role, while men still have these roles. The most recurring age for first role actresses is 26 while it is 36 for men. That is not incredible for my career. I got to start soon.
+But then I thought perhaps women have shorter career, but are more highly remunerated. 
 
-But then I thought perhaps women have shorter career, but are more highly remunerated.
+Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how it has been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted the share of revenues of movies where woman took the main role changing over time. 
 
-Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how it has been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted the share of revenues of movies where woman took the main role changing over time.
+<div style="display: flex; justify-content: center; align-items: center;">
+    <figure id="Proportion_of_revenues_with_animation" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
+        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
+    </figure>
+</div>
 
-::: {style="display: flex; justify-content: center; align-items: center;"}
-```         
-<figure id="Proportion_of_revenues_with_animation" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
-    <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
-</figure>
-```
-:::
-
-Maybe I should move out to some Scandinavian country, their seem to have plenty of revenue-generating productions, and the first roles are mostly taken by women! However, I need to have "Plan B" in case I'm not the first actress... Is there any relation between the general gender ratio of a film and the revenue generated?
+Maybe I should move out to some Scandinavian country, their seem to have plenty of revenue-generating productions, and the first roles are mostly taken by women!
+However, I need to have "Plan B" in case I'm not the first actress... Is there any relation between the general gender ratio of a film and the revenue generated?
 
 <figure id="sta">
-
-<img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;"/>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Boxplot graph of revenue versus gender ratio for films
-
-</figcaption>
-
+    <img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Boxplot graph of revenue versus gender ratio for films 
+    </figcaption>
 </figure>
 
 Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 There is a linear dropoff in revenue from female proportions above 60%. After running some hypothesis tests we see get a pearson coefficient of -0.072 with p value 4e-10 and a spearman coefficient of -0.067 with p value 8x10e-9. So the correlation is not very strong, but it is statistically significant.
@@ -174,20 +142,15 @@ Oh wow actually it seems that movies with more men tend to generate more revenue
 And is there a correlation between an actress's age and the revenue of the movie in which she plays?
 
 <figure id="sta">
-
-<img src="figs/revenue_vs_age_range_gender_boxplot.png" alt="Revenue vs Age boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;"/>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Boxplot graph of movie revenue versus age for films
-
-</figcaption>
-
+    <img src="figs/revenue_vs_age_range_gender_boxplot.png" alt="Revenue vs Age boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Boxplot graph of movie revenue versus age for films 
+    </figcaption>
 </figure>
 
 Okay there's no strong correlation, except that movies with very young or very old actors tend to make very slightly more money.
 
-So until now I figured that actresses play in smaller budget films, are younger than actors, are much much fewer than actors, and that there are no promising trend. Now I wonder whether we can see how women are portrayed in the film industry.
+So until now I figured that actresses play in smaller budget films, are younger than actors, are much much fewer than actors, and that there are no promising trend. Now I wonder whether we can see how women are portrayed in the film industry. 
 
 ## How are women represented ?
 
@@ -224,7 +187,17 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
     </figure>
 </div>
 
-Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses.
+Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
+
+<figure id="sta">
+    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Sentiment analysis across various topics between male and female dominant films
+    </figcaption>
+</figure>
+
+
+Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant.
 
 # Exploring the Language of Film Through Gendered Lenses
 
@@ -266,7 +239,7 @@ To validate the coherence of the defined categories, I analyzed which words were
 
 <figure id="fig6">
 
-<iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0" scrolling="no">
+<iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0">
 
 </iframe>
 
@@ -330,7 +303,7 @@ I aggregated the category scores for both subsets and visualized them side-by-si
 
 <figure id="fig2">
 
-<iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0" scrolling="no">
+<iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0">
 
 </iframe>
 
@@ -394,7 +367,7 @@ It’s also essential to consider how these differences evolve over time. Perhap
 
 <figure id="fig2">
 
-<iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0" scrolling="no">
+<iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0">
 
 </iframe>
 
@@ -426,7 +399,7 @@ This world map visualization shows each country colored or marked depending on w
 
 <figure id="fig2">
 
-<iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0" scrolling="no">
+<iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0">
 
 </iframe>
 
@@ -454,125 +427,64 @@ I’ll carry these insights forward as I continue to explore the industry and sh
 
 # Giving a voice to women: looking at directors
 
-I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? Are women directors more inclusive? Do they also suffer inequalities? What if I ever want to direct a movie? What are my chances?
+I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? Are women directors more inclusive? Do they also suffer inequalities? What if I ever want to direct a movie? What are my chances? 
 
 I’ll first look at general gender ratio across directors and the average number of movies per director. Does that change across genders?.
 
 <figure>
-
-<iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1100" height="500" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Director / Gender distribution + Average number of movies per gender
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1100" height="500" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution + Average number of movies per gender</figcaption>
 </figure>
 
-Ouch… Ok, I see that there is only 10 % of women directors in the dataset. I also see that they produce 2 times less movies than directors. Maybe in previous years the industry was more male dominated? How has this proportion evolved over the years?
+Ouch… Ok, I see that there is only 10 % of women directors in the dataset. I also see that they produce 2 times less movies than directors. Maybe in previous years the industry was more male dominated? How has this proportion evolved over the years?  
 
 <figure>
-
-<iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1100" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Director Gender Representation by Year
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Year</figcaption>
 </figure>
 
 Looks like it increased a little bit compared to the 70s, but we are still a minority! The proportion of female directors is limited to 10% even in the most recent years. Maybe I should consider geographical location as well. Are there some countries with higher proportions of female directors? Should I really move countries?
 
 <figure>
-
-<iframe src="figs/directors_html/director_countries.html" width="1100" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Director Gender Representation by Country
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_countries.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Country</figcaption>
 </figure>
 
 So perhaps I will move to Argentina where there is the highest proportion of female directors (6%) for a country. France is lacking behind with 3%. Now I wonder which genre has the most women directors? Should I try to specialize in one particular genre?
 
 <figure>
-
-<iframe src="figs/directors_html/director_gender_by_genre.html" width="1100" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Director Gender Representation by Genre
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_gender_by_genre.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Genre</figcaption>
 </figure>
-
 Well here again, women directors seem to favor romance film where they have the highest ratio (6.1%). But I don't like romance. I prefer musical, or fantasy. In this case, both don't have a lot of women directors (2.7% and 4.1% respectively).
 
 How about revenue? Do male directors earn more on average than women directors? What about in total? What is the proportion of revenue that is generated by female directors?
-
 <figure>
-
-<iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Average revenue per director by Gender + Proportion of revenue by gender
-
-</figcaption>
-
+    <iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Average revenue per director by Gender + Proportion of revenue by gender</figcaption>
 </figure>
 
-Ok that is not cool. Movies made by man generate on average 1.5 times more than movies made by women. Cummulatively, they capture 91.1% of all revenues !! Well, I am still not ready to revolutionize the movie industry as a director. But I would like to work on it, and learn from a mentor that would encourage me and propel me into changing the cinema field. My dream now is to land a main role in a movie. Would I have more chances to land the role if the director is a woman?\
+Ok that is not cool. Movies made by man generate on average 1.5 times more than movies made by women. Cummulatively, they capture 91.1% of all revenues !!
+Well, I am still not ready to revolutionize the movie industry as a director. But I would like to work on it, and learn from a mentor that would encourage me and propel me into changing the cinema field. My dream now is to land a main role in a movie. Would I have more chances to land the role if the director is a woman?  
 And what about the casting choices of directors? Do female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias?
 
 <figure>
-
-<iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1100" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Male Female Representation in Main Roles (Top 3) by Director Gender
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation in Main Roles (Top 3) by Director Gender</figcaption>
 </figure>
-
 So here I see that women directors employ on average the same number of actors and actresses. On the other hand, male directors employ 1.7 times more actors than actresses ! Why ??? That's not fair. What about if I single out each role.
 
 <figure>
-
-<iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="1100" height="600" frameborder="0" scrolling="no">
-
-</iframe>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Male Female Representation by Director Gender for First, Second, and Third Role
-
-</figcaption>
-
+    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation by Director Gender for First, Second, and Third Role</figcaption>
 </figure>
 
-Well for first role, I should definitely not try to work for a male director. They employ 3.6 times more men (I have a 28% chance of being selected). Female directors are much better in terms of equity because I have 50% change of getting first role. Interestingly enough, for second role, I have a bit more chance to be hired by a male director (45%). That's probably because it's nice to have some women in the cast. But sadly, my chances for third role decrease back to 37% with a male director. I feel like they just want one actress for second role. On the other hand, female directors employ both actors and actresses with (about) the same probability for the two gender.
+Well for first role, I should definitely not try to work for a male director. They employ 3.6 times more men (I have a 28% chance of being selected). Female directors are much better in terms of equity because I have 50% change of getting first role. 
+Interestingly enough, for second role, I have a bit more chance to be hired by a male director (45%). That's probably because it's nice to have some women in the cast. But sadly, my chances for third role decrease back to 37% with a male director. I feel like they just want one actress for second role. 
+On the other hand, female directors employ both actors and actresses with (about) the same probability for the two gender. 
 
-So now, it seems that I should definitly apply for a film made by a female director. But considering the very few number of female directors, I might as well look for films by male directors.
+So now, it seems that I should definitly apply for a film made by a female director. But considering the very few number of female directors, I might as well look for films by male directors. 
 
-## Conclusion
+## Conclusion 
+
+
