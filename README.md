@@ -25,7 +25,7 @@ It struck me, as I never could imagine such a strong statement could be true. In
 I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio, which is 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced.
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
+    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 600px; height: 600px;">
         <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
     </figure>
 </div>
@@ -78,7 +78,7 @@ I directly looked at the distribution of main roles. I found out that men have 7
 
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
-<figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 400px;">
+<figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 500px;">
     <iframe 
         src="figs/first_role_genre.html" 
         width="100%" 
@@ -218,9 +218,7 @@ I have developed a series of thematic categories that capture key concepts such 
 
 ### Quantifying Thematic Presence in Movie Summaries
 
-To measure the prevalence of each thematic category within movie summaries, I considered a method that counts the occurrences of words associated with each category. To define these category-specific words, I utilized the centroids as reference points and identified words similar to them by calculating cosine similarity between their vectors. This process involved selecting the most similar words from a pool of unique words found across all summaries. For each category, I selected the top *n* closest words to its centroid. The presence of these words in a summary is then quantified, forming a score based on their relative frequency compared to the total word count. This scoring method can be mathematically represented as follows:
-
-$\text{Category Score} = \frac{\text{Count of Category-Specific Words in Summary}}{\text{Total Words in Summary}}$
+To measure the prevalence of each thematic category within movie summaries, I considered a method that counts the occurrences of words associated with each category. To define these category-specific words, I utilized the centroids as reference points and identified words similar to them by calculating cosine similarity between their vectors. This process involved selecting the most similar words from a pool of unique words found across all summaries. For each category, I selected the top *n* closest words to its centroid. The presence of these words in a summary is then quantified, forming a score based on their relative frequency compared to the total word count.
 
 This score gives us an idea of the sentiment of the movie summaries, but to distinguish it from the sentiment analysis and given the fact that it is based on semantic similarities it will be called semantic score.
 
