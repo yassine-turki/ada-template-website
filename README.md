@@ -372,6 +372,7 @@ How about revenue? Do male directors earn more on average than women directors? 
     <iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Average revenue per director by Gender + Proportion of revenue by gender</figcaption>
 </figure>
+
 Ok that is not cool. Movies made by man generate on average 1.5 times more than movies made by women. Cummulatively, they capture 91.1% of all revenues !!
 Well, I am still not ready to revolutionize the movie industry as a director. But I would like to work on it, and learn from a mentor that would encourage me and propel me into changing the cinema field. My dream now is to land a main role in a movie. Would I have more chances to land the role if the director is a woman?  
 And what about the casting choices of directors? Do female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias?
@@ -380,18 +381,18 @@ And what about the casting choices of directors? Do female directors hire more f
     <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1000" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation in Main Roles (Top 3) by Director Gender</figcaption>
 </figure>
-So here I see that women directos employ on average the same number of actors and actresses. On the other hand, male directors employ 1.7 times more actors than actresses ! Why ??? That's not fair. What about if I single out each role.
+So here I see that women directors employ on average the same number of actors and actresses. On the other hand, male directors employ 1.7 times more actors than actresses ! Why ??? That's not fair. What about if I single out each role.
 
 <figure>
-    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="900" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="1100" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation by Director Gender for First, Second, and Third Role</figcaption>
 </figure>
 
-Well for first role, I should definitly not try to work for a male director. They employ 3.6 times more man (I have a 28% chance of being selected). Female directors are much better in terms of equity because I have 50% change of getting first role. 
+Well for first role, I should definitely not try to work for a male director. They employ 3.6 times more men (I have a 28% chance of being selected). Female directors are much better in terms of equity because I have 50% change of getting first role. 
 Interestingly enough, for second role, I have a bit more chance to be hired by a male director (45%). That's probably because it's nice to have some women in the cast. But sadly, my chances for third role decrease back to 37% with a male director. I feel like they just want one actress for second role. 
 On the other hand, female directors employ both actors and actresses with (about) the same probability for the two gender. 
 
-So now, it seems that I should definitly apply for a film made by a female director. But considering the very few number of female direcotr, I might as well look for films by male directors. 
+So now, it seems that I should definitly apply for a film made by a female director. But considering the very few number of female directors, I might as well look for films by male directors. 
 
 ## Conclusion 
 
