@@ -10,7 +10,7 @@ Warning message. Angelina is a fictitious character created for the sake of the 
 ### Introduction
 
 <figure id="sta">
-    <img src="figs/Angelina.webp" alt="Angelina" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/Angelina.webp" alt="Angelina" style="width:300px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Dall-e generated picture of Anglina
     </figcaption>
