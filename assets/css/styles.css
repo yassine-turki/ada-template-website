@@ -120,7 +120,7 @@ header ul {
 }
 
 header li {
-  width: auto; /* Adjusted width */
+  width: auto;
   float: left;
   border-right: 1px solid #e0e0e0;
   height: 40px;
@@ -207,18 +207,21 @@ li {
 }
 
 a {
-  display: block;
+  display: inline-block; /* Ensures the button is inline with appropriate padding */
   padding: 10px 20px; /* Adjust padding to control button size */
   text-align: center;
   background-color: #007bff; /* Customize button color */
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  width: 100%; /* Make the button take full width of its container */
 }
 
 a:hover {
   background-color: #0056b3; /* Button hover effect */
+}
+
+a:focus {
+  outline: none;
 }
 
 @media print, screen and (max-width: 960px) {
