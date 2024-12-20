@@ -12,7 +12,7 @@ Warning message. Louise is a fictitious character created for the sake of the pr
 <figure id="sta">
     <img src="figs/Angelina.webp" alt="Angelina" style="width:300px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
-        Dall-e generated picture of Anglina
+        Dall-e generated picture of Louise
     </figcaption>
 </figure>
 My name is Louise, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
