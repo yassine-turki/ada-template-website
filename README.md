@@ -104,10 +104,11 @@ But then I thought, perhaps famous actresses play longer… Let me check. <a hre
 </figure>
 We see that first role actors play longer. Indeed, if we look at age 50, there are almost no actresses with first role, while men still have these roles. The most recurring age for first role actresses is 26 while it is 36 for men. That is not incredible for my career. I got to start soon. 
 
-But then I thought that movies which generate high revenues might be more inclusive because they need reach out to more people. 
+But then I thought that the time span of women taking first roles in the movies is compensated by the fact that these women play in popular movies, with high box office revenue, which reflects on they pay. Maybe very popular pay gap doesn’t apply for the best paid actresses…
 
 
-So my question now is whether big films have lots of actresses, and if there is a link between the two. So I went on and once more did the analysis, and as we see \[...LoLo\] Not so much… But then, clinging on for hope I decided to check whether, perhaps, having a woman in the first role would lead to higher revenue for a given film. Or would it be the opposite? \[Oskar graph 1\] But does this change across countries? Perhaps there are some countries where having an actress in first role is correlated with higher revenue? \[Oskar graph 1\] And what if I did become the biggest star of my country!? How much would I earn? Is the gender wage gap between the biggest stars of cinema different across countries? Let’s see \[Oskar graph 2\] Hmmm… But to be a star, I need to make sure the country I’m in actually produces movies. Let’s see which countries produce the most movies. We’ll only look at movies that list revenue to weed out very small films.
+Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how has it been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted how was the share of revenues of movies where woman took the main role changing over time. 
+
 
 But is there any relation between the general gender ratio of a film and the revenue generated?
 
