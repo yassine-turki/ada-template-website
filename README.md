@@ -26,7 +26,7 @@ I went on the internet and downloaded the information of all movies from wikiped
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 700px; height: 600px;">
-        <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 200%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
+        <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 500px; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
     </figure>
 </div>
 
@@ -123,7 +123,7 @@ Since I planned on becoming the best of the best, I want to see how top actresse
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <figure id="Proportion_of_revenues_with_animation" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
-        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 200%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
+        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 500px; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
     </figure>
 </div>
 
