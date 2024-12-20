@@ -370,4 +370,10 @@ And what about the casting choices of Directors? Do female directors hire more f
 </figure>
 
 
+<figure>
+    <iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Average revenue per director by Gender + Proportion of revenue by gender</figcaption>
+</figure>
+
+
 Looking at other societal issues : what’s been done ?
