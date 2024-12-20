@@ -46,7 +46,7 @@ The proportion of women in films increases very slightly from the 60s. In 1960 t
 One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#inclusive_genre">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
 
 <figure id="inclusive_genre">
-    <iframe src="figs/top_genres.html" width="900" height="600" frameborder="0"></iframe>
+    <iframe src="figs/top_genres.html" width="800" height="600" frameborder="1"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genres. 
     </figcaption>
@@ -101,7 +101,7 @@ So basically, actresses start their career, on average, at 27 while men start at
 But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 6</a> shows the age distribution for first role actors/actresses. 
 
 <figure id="first_age">
-    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="400" frameborder="0"></iframe>
+    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Begining and ending career age for first role actors and actressses
     </figcaption>
