@@ -220,7 +220,7 @@ In this plot, each cluster corresponds to one thematic category. For example, �
 
 ## Scoring Films by Thematic Content
 
-For each category, I used the identified 100 words to score every movie. The score represents how many of these category-related words appear in the movie’s summary, normalized by total word count. This gave each film a “profile” across various themes—love, violence, family, etc.
+[LITTLE NOTE TO REPRHASE 1ST SENTENCE] For each category, I used the identified 100 words to score every movie. The score represents how many of these category-related words appear in the movie’s summary, normalized by total word count. This gave each film a “profile” across various themes—love, violence, family, etc.
 
 ## Relationship Between Gender Proportion and Category Intensity
 
