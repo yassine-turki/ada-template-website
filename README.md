@@ -34,7 +34,7 @@ I was disappointed to see that women are much less present than men. I was espec
 
 <div style="display: flex; align-items: left;">
     <figure id="actress_num_movie" style="margin-right: 20px; text-align: left;">
-        <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0"></iframe>
+        <iframe src="figs/Mean_Ratio_and_Count_by_Movie_Release_Date.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         <figcaption style="text-align: center; margin-top: 4px;">
             Ratio of actresses and number of movies by year
         </figcaption>
@@ -47,7 +47,7 @@ One thing I learned from ADA is that valuable information can be hidden in the d
 
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
     <figure id="inclusive_genre" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
-        <iframe src="figs/top_genres.html" width="800" height="600" frameborder="0"></iframe>
+        <iframe src="figs/top_genres.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         <figcaption style="text-align: center; margin-top: 4px;">
             Most and least inclusive genres.
         </figcaption>
@@ -110,7 +110,7 @@ So basically, actresses start their career, on average, at 27 while men start at
 But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 7</a> shows the age distribution for first role actors/actresses. 
 
 <figure id="first_age">
-    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0"></iframe>
+    <iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Begining and ending career age for first role actors and actressses
     </figcaption>
@@ -227,7 +227,7 @@ To verify that my categories made sense, I looked at which words were most simil
 **Figure: 3D Visualization of Category Clusters**\
 
 <figure id="fig6">
-    <iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0"></iframe>
+    <iframe src="figs/centroids_top_words_plot_3d.html" width="1000" height="500" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Evolution of the gender ratio for different roles 
     </figcaption>
@@ -275,7 +275,7 @@ I aggregated the category scores for both subsets and visualized them side-by-si
 **Figure 2: Average Category Scores by Gender Dominance**
 
 <figure id="fig2">
-    <iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/interactive_sentiment_comparison.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Average category scores by gender dominance
     </figcaption>
@@ -316,7 +316,7 @@ It’s also essential to consider how these differences evolve over time. Perhap
 
 **Figure 3: Temporal Trends in Category Scores by Gender Dominance**  
 <figure id="fig2">
-    <iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/sentiments_time.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Average category scores by gender dominance
     </figcaption>
@@ -332,7 +332,7 @@ To understand if cultural context matters, I mapped category differences worldwi
 
 **Figure 6: Geographic Distribution of Category Differences**  
 <figure id="fig2">
-    <iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/geographic_sentiment_score.html" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Average category scores by gender dominance
     </figcaption>
@@ -356,35 +356,35 @@ I’ve focused all my energy on researching actors so far, but what if I looked 
 I’ll first look at general gender ratio across directors and the average number of movies per director. Does that change across genders?.
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1100" height="500" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1100" height="500" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution + Average number of movies per gender</figcaption>
 </figure>
 
 Ouch… Ok, I see that there is only 10 % of women directors in the dataset. I also see that they produce 2 times less movies than directors. Maybe in previous years the industry was more male dominated? How has this proportion evolved over the years?  
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1100" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Year</figcaption>
 </figure>
 
 Looks like it increased a little bit compared to the 70s, but we are still a minority! The proportion of female directors is limited to 10% even in the most recent years. Maybe I should consider geographical location as well. Are there some countries with higher proportions of female directors? Should I really move countries?
 
 <figure>
-    <iframe src="figs/directors_html/director_countries.html" width="1100" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_countries.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Country</figcaption>
 </figure>
 
 So perhaps I will move to Argentina where there is the highest proportion of female directors (6%) for a country. France is lacking behind with 3%. Now I wonder which genre has the most women directors? Should I try to specialize in one particular genre?
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_by_genre.html" width="1100" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_by_genre.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Genre</figcaption>
 </figure>
 Well here again, women directors seem to favor romance film where they have the highest ratio (6.1%). But I don't like romance. I prefer musical, or fantasy. In this case, both don't have a lot of women directors (2.7% and 4.1% respectively).
 
 How about revenue? Do male directors earn more on average than women directors? What about in total? What is the proportion of revenue that is generated by female directors?
 <figure>
-    <iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/revenue_by_gender" width="900" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Average revenue per director by Gender + Proportion of revenue by gender</figcaption>
 </figure>
 
@@ -393,13 +393,13 @@ Well, I am still not ready to revolutionize the movie industry as a director. Bu
 And what about the casting choices of directors? Do female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias?
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1100" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation in Main Roles (Top 3) by Director Gender</figcaption>
 </figure>
 So here I see that women directors employ on average the same number of actors and actresses. On the other hand, male directors employ 1.7 times more actors than actresses ! Why ??? That's not fair. What about if I single out each role.
 
 <figure>
-    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="1100" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_role_distribution_with_ratios.html" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation by Director Gender for First, Second, and Third Role</figcaption>
 </figure>
 
