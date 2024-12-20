@@ -120,14 +120,22 @@ But is there any relation between the general gender ratio of a film and the rev
 <figure id="sta">
     <img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
-        Boxplot graph of revenue for films 
+        Boxplot graph of revenue versus gender ratio for films 
     </figcaption>
 </figure>
 
 Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 There is a linear dropoff in revenue from Female proportions above around 60%. After running some hypothesis tests we see get a pearson coefficient of -0.072 with p value 4e-10 and a spearman coefficient of -0.067 with p value 8x10e-9. So the correlation is not very strong, but it is statistically significant.
 
-And is there a correlation between an actress's age and the revenue of the movie in which she plays? \[... ALIX\] 
+And is there a correlation between an actress's age and the revenue of the movie in which she plays?
 
+<figure id="sta">
+    <img src="revenue_vs_age_range_gender_boxplot.png" alt="Revenue vs Age boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Boxplot graph of movie revenue versus age for films 
+    </figcaption>
+</figure>
+
+Okay there's no strong correlation, except that movies with very young or very old actors tend to make very slightly more money.
 
 ## How are women represented ?
 
