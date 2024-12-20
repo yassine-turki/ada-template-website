@@ -78,11 +78,11 @@ I directly looked at the distribution of main roles. I found out that men have 7
 
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
-<figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 700px;">
+<figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 400px;">
     <iframe 
         src="figs/first_role_genre.html" 
         width="100%" 
-        height="500" 
+        height="400" 
         style="border: none; display: block; overflow: hidden;" 
         scrolling="no">
     </iframe>
@@ -187,14 +187,7 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
     </figure>
 </div>
 
-Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses. I’ll run sentiment analysis on a variety of topics for our movies with the same split on gender ratio
-
-<figure id="sta">
-    <img src="figs/st_analysis_topics.jpg" alt="Sentiment analysis across various topics" style="width:700px; height:auto; display:block; margin:0 auto;">
-    <figcaption style="text-align: center; margin-top: 4px;">
-        Sentiment analysis across various topics between male and female dominant films
-    </figcaption>
-</figure>
+Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses.
 
 
 Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant.
@@ -486,4 +479,7 @@ So now, it seems that I should definitly apply for a film made by a female direc
 
 ## Conclusion 
 
+So a quick recap. I am a theater student from Paris, studying in my final year and I want to begin a career in the movie industry. Staying in France is reasonable as it has a higher percentage of actresses than the global average.  But Scandinavian countries actually show a strong trend to integrate women in higher revenue films. However, I have to be ready to play in romantic movies. Even though the demand for erotic films is high, it is definitely not the field I will go to. Moreover, women are mostly considered by their physical traits which I saw with the age discrepancy, and the adjective used to describe women and men. They are mostly linked to romance or family topics, and are considered soft, tender, but are also considered maids. In movies, women are not perceived for their strength and thus do not appear in violent movies. Moreover, I saw that directors are mostly men, and that they hire mostly actors rather than actresses. On the contrary, women directors hire equally actors and actresses. However, women directors generate much less revenue on average compared to male directors.
+
+So right now, the movie industry is not very progressive, which leaves me troubled. Now my role is to try to change the system. Perhaps if I integrate the feminist movies will I find all the answers to my problems. 
 
