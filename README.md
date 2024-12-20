@@ -22,9 +22,18 @@ It struck me, as I never could imagine such a strong statement could be true. In
 
 ### Starting from the beginning
 
-I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure \[OSKAR...\] shows the proportion of actresses in each of the world regions. …
+I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced. …
 
-I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#actress_num_movie">Figure 1</a>) globally but also by regions (figure…OSKAR)
+<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
+    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
+        <iframe src="figs/Female_actors_ratio.html" width="800" height="600" frameborder="0"></iframe>
+        <figcaption style="text-align: center; margin-top: 4px;">
+            Most and least inclusive genres.
+        </figcaption>
+    </figure>
+</div>
+
+I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#actress_num_movie">Figure 2</a>) globally but also by regions (figure…OSKAR)
 
 <div style="display: flex; align-items: left;">
     <figure id="actress_num_movie" style="margin-right: 20px; text-align: left;">
@@ -37,7 +46,7 @@ I was disappointed to see that women are much less present than men. But I did n
 
 The proportion of women in films increases very slightly from the 60s. In 1960 there were 31% actresses in films, while in 2011 there are 35%. In France, the ratio of actresses is constant, but slithly higher than the global average.
 
-One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#inclusive_genre">Figure 2</a> shows the list of genre with the highest and lowest gender ratio.
+One thing I learned from ADA is that valuable information can be hidden in the data so I decided to dig further and look at the evolution of actresses in film by movie genre. <a href="#inclusive_genre">Figure 3</a> shows the list of genre with the highest and lowest gender ratio.
 
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
     <figure id="inclusive_genre" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
@@ -54,7 +63,7 @@ Definitely, my future does not look very bright from this perspective. But with 
 
 And so I went and explored my data. The problem was that I didn’t have a way to identify the main actors from my dataset. Nothing stops me, so I went online, found out that IMDB had a list of main roles, downloaded all the data, cleaned it, merged it, until I had a nice dataframe, one that would satisfy Maria and Bob.
 
-I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 3</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
+I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 4</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
 <figure id="ev_gender_ratio_roles">
     <iframe src="figs/percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0"></iframe>
@@ -63,7 +72,7 @@ I directly looked at the distribution of main roles. I found out that men have 7
     </figcaption>
 </figure>
 
-Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 4</a> shows the most and least inclusive genre for first roles actors/actresses.
+Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
 <figure id="genre_inslusive_firstrole">
     <iframe src="figs/first_role_genre.html" width="750" height="500" frameborder="0"></iframe>
@@ -83,7 +92,7 @@ So I kept only the films with the highest revenue (above …OSKAR), and looked a
 \[Discussion on graph\]
 
 But if I become a star, how long will I remain a star? (Louise dreaming) 
-If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 5</a>)
+If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
 
 <figure id="av_age_actors">
     <iframe src="figs/average_age_of_actors.html" width="800" height="500" frameborder="0"></iframe>
@@ -94,7 +103,7 @@ If I start to get older, will I remain famous and loved by all my fans? So I loo
 
 So basically, actresses start their career, on average, at 27 while men start at 32 years old. I think that means actresses are only good if they are still young and pretty. I can also see a disparity when the actors/actresses retire. Men finish their career much older than women and also stay longer (10 year for men while only 8 years for women). 
 
-But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 6</a> shows the age distribution for first role actors/actresses. 
+But then I thought, perhaps famous actresses play longer… Let me check. <a href="#first_age">Figure 7</a> shows the age distribution for first role actors/actresses. 
 
 <figure id="first_age">
     <iframe src="figs/images/age_distribution_first_role.png" width="700" height="700" frameborder="0"></iframe>
