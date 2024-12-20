@@ -54,6 +54,24 @@
             margin: 0.2rem 0;
             color: #555;
         }
+        .button-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .button-container button, .button-container a {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ADD8E6;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .button-container button:hover, .button-container a:hover {
+            background-color: #0073e6;
+        }
         footer {
             text-align: center;
             margin: 2rem 0;
@@ -104,8 +122,22 @@
         </div>
         <!-- Add more team members as needed -->
     </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button onclick="goBack()">Go Back</button>
+        <a href="index.html">Home</a>
+    </div>
+
     <footer>
         <p>&copy; 2024 Team Presentation Page. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Function to navigate back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
