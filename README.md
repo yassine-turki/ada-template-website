@@ -26,7 +26,7 @@ I went on the internet and downloaded the information of all movies from wikiped
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
-        <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0"></iframe>
+        <iframe src="figs/Female_actors_ratio.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
     </figure>
 </div>
 
@@ -91,7 +91,6 @@ Let me investigate which genre is most welcoming for my career as an all time st
     </figcaption>
 </figure>
 
-
 So either I am a feminist, or a pornstar. That's not very nice...
 
 So clearly, women are not present in war films. But they are present in erotic movies 🙄
@@ -100,7 +99,7 @@ But if I become a star, how long will I remain a star? (Louise dreaming)
 If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
 
 <figure id="av_age_actors">
-    <iframe src="figs/average_age_of_actors.html" width="1000" height="500" frameborder="0"></iframe>
+    <iframe src="figs/average_age_of_actors.html" width="1000" height="500" frameborder="0" scrolling="no"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Begining and ending career age for actors and actressses
     </figcaption>
@@ -124,7 +123,7 @@ Since I planned on becoming the best of the best, I want to see how top actresse
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <figure id="Proportion_of_revenues_with_animation" style="margin-right: 20px; text-align: left; width: 800px; height: 600px;">
-        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0"></iframe>
+        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0" scrolling="no"></iframe>
     </figure>
 </div>
 
