@@ -318,7 +318,7 @@ I’ve focused all my energy on researching actors so far, but what if I looked 
 I’ll first look at general gender ratio across directors.
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_distribution_and_proportions" width="800" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_distribution_and_proportions" width="800" height="700" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution</figcaption>
 </figure>
 
