@@ -18,11 +18,11 @@ Warning message. Louise is a fictitious character created for the sake of the pr
 My name is Louise, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
 A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”. 
 
-It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, I will be able to determine whether my friend was right or not.
+It struck me, as I never could imagine such a strong statement could be true. In this era of fake news, I could not let my dreams be ruined by a few words so I decided to take the matter in my own hands. I decided to pursue a class at EPFL called ADA, and do my own analysis of all the movie industry. Then, and only then, will I be able to determine whether my friend was right or not.
 
 ### Starting from the beginning
 
-I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced.
+I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the ratio, which is 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced.
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left; width: 1200px; height: 700px;">
@@ -60,7 +60,7 @@ Definitely, my future does not look very bright from this perspective. But with 
 
 And so I went and explored my data. The problem was that I didn’t have a way to identify the main actors from my dataset. Nothing stops me, so I went online, found out that IMDB had a list of main roles, downloaded all the data, cleaned it, merged it, until I had a nice dataframe, one that would satisfy Maria and Bob.
 
-I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 4</a> shows the evolution of the women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
+I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 4</a> shows the evolution of women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
 <figure id="ev_gender_ratio_roles">
     <iframe src="figs/percentage_evolution_of_actresses.html" width="800" height="500" frameborder="0"></iframe>
@@ -104,10 +104,9 @@ But then I thought, perhaps famous actresses play longer… Let me check. <a hre
 </figure>
 We see that first role actors play longer. Indeed, if we look at age 50, there are almost no actresses with first role, while men still have these roles. The most recurring age for first role actresses is 26 while it is 36 for men. That is not incredible for my career. I got to start soon. 
 
-But then I thought that the time span of women taking first roles in the movies is compensated by the fact that these women play in popular movies, with high box office revenue, which reflects on they pay. Maybe very popular pay gap doesn’t apply for the best paid actresses…
+But then I thought perhaps women have shorter career, but are more highly remunerated. 
 
-
-Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how has it been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted how was the share of revenues of movies where woman took the main role changing over time. 
+Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how it has been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted the share of revenues of movies where woman took the main role changing over time. 
 
 
 But is there any relation between the general gender ratio of a film and the revenue generated?
