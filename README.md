@@ -127,7 +127,8 @@ Since I planned on becoming the best of the best, I want to see how top actresse
     </figure>
 </div>
 
-But is there any relation between the general gender ratio of a film and the revenue generated?
+Maybe I should move out to some Scandinavian country, their seem to have plenty of revenue-generating productions, and the first roles are mostly taken by women!
+However, I need to have "Plan B" in case I'm not the first actress... Is there any relation between the general gender ratio of a film and the revenue generated?
 
 <figure id="sta">
     <img src="figs/revenue_vs_female_percentage.png" alt="Revenue vs Gender boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
