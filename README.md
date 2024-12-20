@@ -9,7 +9,12 @@ Warning message. Angelina is a fictitious character created for the sake of the 
 
 ### Introduction
 
-(some AI generated photo?)
+<figure id="sta">
+    <img src="figs/Angelina.webp" alt="Angelina" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Dall-e generated picture of Anglina
+    </figcaption>
+</figure>
 My name is Angelina, I am 21 years old and I just finished a school of theater in Paris. Theater has always been my passion, but the problem is the very low and unreliable salary. My dream now is to work in the movie industry where I will be able to continue acting, while earning a sufficient income.  
 A friend of mine told me: “Movies are made by men for men. Women are just here to add sexyness”. 
 
@@ -117,22 +122,22 @@ Well, it is highly skewed right, but that’s no real surprise anymore based on 
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
     <figure id="fa" style="text-align: center;">
-        <img src="figs/female_adj_wordcloud.png" alt="Most Common Adjectives for Female Characters" style="width:400px; height:auto;">
+        <img src="figs/wordclouds/female_adj_wordcloud.png" alt="Most Common Adjectives for Female Characters" style="width:400px; height:auto;">
         <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds female characters</figcaption>
     </figure>
     <figure id="ma" style="text-align: center;">
-        <img src="figs/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;">
+        <img src="figs/wordclouds/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;">
         <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds male characters</figcaption>
     </figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
     <figure id="fv" style="text-align: center;">
-        <img src="figs/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
+        <img src="figs/wordclouds/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
         <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds female characters</figcaption>
     </figure>
     <figure id="mv" style="text-align: center;">
-        <img src="figs/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
+        <img src="figs/wordclouds/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
         <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds male characters</figcaption>
     </figure>
 </div>
