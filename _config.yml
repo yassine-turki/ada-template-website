@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: "Screening Change:"
 description: Feminism, Representation, and Social Transformation in Film
-show_downloads: False
+show_downloads: True
 navigation:
   - title: Home
     url: /

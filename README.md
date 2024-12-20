@@ -22,7 +22,7 @@ It struck me, as I never could imagine such a strong statement could be true. In
 
 ### Starting from the beginning
 
-I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure \[OSKAR...\] shows the ratio of actresses in each of the world regions. …
+I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure \[OSKAR...\] shows the proportion of actresses in each of the world regions. …
 
 I was disappointed to see that women are much less present than men. But I did not lose hope, and figured that perhaps there was a great evolution of women in films. So I looked at the evolution of the percentage of women in films (<a href="#actress_num_movie">Figure 1</a>) globally but also by regions (figure…OSKAR)
 
@@ -328,18 +328,11 @@ I’ll carry these insights forward as I continue to explore the industry and sh
 # Giving a voice to women: looking at directors
 
 I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? What if I ever want to direct a movie? What are my chances?  
-I’ll first look at general gender ratio across directors.
+I’ll first look at general gender ratio across directors and the average number of movies per director. Does that change across genders?.
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_distribution_and_proportions" width="1000" height="700" frameborder="0"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution</figcaption>
-</figure>
-
-And what about the number of movies per director? Does that change across genders?  
-
-<figure>
-    <iframe src="figs/directors_html/average_movie_count_per_director.html" width="1000" height="600" frameborder="0"></iframe>
-    <figcaption style="text-align: center; margin-top: 4px;">Average movie count per gender</figcaption>
+    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1000" height="500" frameborder="0"></iframe>
+    <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution + Average number of movies per gender</figcaption>
 </figure>
 
 Ouch… Ok, I see that there is only 10 % of women directors in the dataset. Maybe in previous years the industry was more male dominated? How has this proportion evolved over the years?  
