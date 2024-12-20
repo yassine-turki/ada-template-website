@@ -338,28 +338,28 @@ I’ve focused all my energy on researching actors so far, but what if I looked 
 I’ll first look at general gender ratio across directors and the average number of movies per director. Does that change across genders?.
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1000" height="500" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1100" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution + Average number of movies per gender</figcaption>
 </figure>
 
 Ouch… Ok, I see that there is only 10 % of women directors in the dataset. I also see that they produce 2 times less movies than directors. Maybe in previous years the industry was more male dominated? How has this proportion evolved over the years?  
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_by_year_bins.html" width="1100" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Year</figcaption>
 </figure>
 
 Looks like it increased a little bit compared to the 70s, but we are still a minority! The proportion of female directors is limited to 10% even in the most recent years. Maybe I should consider geographical location as well. Are there some countries with higher proportions of female directors? Should I really move countries?
 
 <figure>
-    <iframe src="figs/directors_html/director_countries.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_countries.html" width="1100" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Country</figcaption>
 </figure>
 
 So perhaps I will move to Argentina where there is the highest proportion of female directors (6%) for a country. France is lacking behind with 3%. Now I wonder which genre has the most women directors? Should I try to specialize in one particular genre?
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_by_genre.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_by_genre.html" width="1100" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director Gender Representation by Genre</figcaption>
 </figure>
 Well here again, women directors seem to favor romance film where they have the highest ratio (6.1%). But I don't like romance. I prefer musical, or fantasy. In this case, both don't have a lot of women directors (2.7% and 4.1% respectively).
@@ -375,7 +375,7 @@ Well, I am still not ready to revolutionize the movie industry as a director. Bu
 And what about the casting choices of directors? Do female directors hire more females than male directors? What about taking a first, second, or third role? Do we have a bias?
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1000" height="600" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_roles_with_precise_ratios.html" width="1100" height="600" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Male Female Representation in Main Roles (Top 3) by Director Gender</figcaption>
 </figure>
 So here I see that women directors employ on average the same number of actors and actresses. On the other hand, male directors employ 1.7 times more actors than actresses ! Why ??? That's not fair. What about if I single out each role.
