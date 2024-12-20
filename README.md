@@ -314,7 +314,7 @@ I’ve focused all my energy on researching actors so far, but what if I looked 
 I’ll first look at general gender ratio across directors and the average number of movies per director. Does that change across genders?.
 
 <figure>
-    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1000" height="700" frameborder="0"></iframe>
+    <iframe src="figs/directors_html/director_gender_combined_plots_side_by_side" width="1000" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">Director / Gender distribution + Average number of movies per gender</figcaption>
 </figure>
 
