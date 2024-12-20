@@ -24,12 +24,9 @@ It struck me, as I never could imagine such a strong statement could be true. In
 
 I went on the internet and downloaded the information of all movies from wikipedia. At first glance I wanted to see the ratio of actresses and actors. I found out that there are 2 times more actors than actresses. I was a little disoriented. But since I am in Paris, I checked the same ratio, but in France which was around 1.71, slightly better than the average... I also took the opportunity to look at various countries, and whether they can beat France. Figure (<a href="#Female_actors_ratio">Figure 1</a>) shows the proportion of actresses in the world countries with at least 20 movies produced. …
 
-<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
-    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: center; flex: 1 1 auto;">
+<div style="display: flex; align-items: left;">
+    <figure id="Female_actors_ratio" style="margin-right: 20px; text-align: left;">
         <iframe src="figs/Female_actors_ratio.html" width="800" height="600" frameborder="0"></iframe>
-        <figcaption style="text-align: center; margin-top: 4px;">
-            Most and least inclusive genres.
-        </figcaption>
     </figure>
 </div>
 
