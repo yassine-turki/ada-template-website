@@ -78,12 +78,19 @@ I directly looked at the distribution of main roles. I found out that men have 7
 
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
-<figure id="genre_inslusive_firstrole">
-    <iframe src="figs/first_role_genre.html" width="750" height="700" frameborder="0"></iframe>
+<figure id="genre_inslusive_firstrole" style="margin: 0; padding: 0; overflow: hidden; width: 750px; height: 700px;">
+    <iframe 
+        src="figs/first_role_genre.html" 
+        width="100%" 
+        height="100%" 
+        style="border: none; display: block; overflow: hidden;" 
+        scrolling="no">
+    </iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genre for first role
     </figcaption>
 </figure>
+
 
 So either I am a feminist, or a pornstar. That's not very nice...
 
