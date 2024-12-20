@@ -194,44 +194,35 @@ So until now I figured that actresses play in smaller budget films, are younger 
 Now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
 
 <figure id="sta">
-
-<img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:700px; height:auto; display:block; margin:0 auto;"/>
-
-<figcaption style="text-align: center; margin-top: 4px;">
-
-Percentage of females in movie cast across all movies in CMU Dataset
-
-</figcaption>
-
+    <img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:700px; height:auto; display:block; margin:0 auto;">
+    <figcaption style="text-align: center; margin-top: 4px;">
+        Percentage of females in movie cast across all movies in CMU Dataset
+    </figcaption>
 </figure>
 
 Well, it is highly skewed right, but that’s no real surprise anymore based on my previous analyses… Oh, this gives me an idea! I’ll split films by character gender ratio and look at the descriptive adjectives and verbs used in films with more men than women and vice versa through NLP methods. A ratio of 1:2 seems like a good cutoff point. I’ll also remove words that show up for both male dominant and female dominant films at similar frequencies.
 
-::: {style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;"}
-```         
-<figure id="fa" style="text-align: center;">
-    <img src="figs/wordclouds/female_adj_wordcloud.png" alt="Most Common Adjectives for Female Characters" style="width:400px; height:auto;">
-    <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds female characters</figcaption>
-</figure>
-<figure id="ma" style="text-align: center;">
-    <img src="figs/wordclouds/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;">
-    <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds male characters</figcaption>
-</figure>
-```
-:::
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
+    <figure id="fa" style="text-align: center;">
+        <img src="figs/wordclouds/female_adj_wordcloud.png" alt="Most Common Adjectives for Female Characters" style="width:400px; height:auto;">
+        <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds female characters</figcaption>
+    </figure>
+    <figure id="ma" style="text-align: center;">
+        <img src="figs/wordclouds/male_adj_wordcloud.png" alt="Most Common Adjectives for Male Characters" style="width:400px; height:auto;">
+        <figcaption style="margin-top: 8px;">Most Common adjective lemmas for movies with more than two thirds male characters</figcaption>
+    </figure>
+</div>
 
-::: {style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;"}
-```         
-<figure id="fv" style="text-align: center;">
-    <img src="figs/wordclouds/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
-    <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds female characters</figcaption>
-</figure>
-<figure id="mv" style="text-align: center;">
-    <img src="figs/wordclouds/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
-    <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds male characters</figcaption>
-</figure>
-```
-:::
+<div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
+    <figure id="fv" style="text-align: center;">
+        <img src="figs/wordclouds/female_verb_wordcloud.png" alt="Most Common Verbs for Female Characters" style="width:400px; height:auto;">
+        <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds female characters</figcaption>
+    </figure>
+    <figure id="mv" style="text-align: center;">
+        <img src="figs/wordclouds/male_verb_wordcloud.png" alt="Most Common Verbs for Male Characters" style="width:400px; height:auto;">
+        <figcaption style="margin-top: 8px;">Most Common verb lemmas for movies with more than two thirds male characters</figcaption>
+    </figure>
+</div>
 
 Ah, well that’s not super encouraging either… It seems films with mostly women characters are characterized by love, marriage, pregnancy and sexuality… While movies with mostly men revolve around violence, power struggles, and crime. Ok let’s try a different approach to see the topics of movies with a large proportion of actresses.
 
