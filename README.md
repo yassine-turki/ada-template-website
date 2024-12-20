@@ -118,7 +118,7 @@ But is there any relation between the general gender ratio of a film and the rev
     </figcaption>
 </figure>
 
-Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 There is a linear dropoff in revenue from Female proportions above around 60%. After running some hypothesis tests we see get a pearson coefficient of -0.072 with p value 4e-10 and a spearman coefficient of -0.067 with p value 8x10e-9. So the correlation is not very strong, but it is statistically significant.
+Oh wow actually it seems that movies with more men tend to generate more revenue, of course...🙄 There is a linear dropoff in revenue from female proportions above 60%. After running some hypothesis tests we see get a pearson coefficient of -0.072 with p value 4e-10 and a spearman coefficient of -0.067 with p value 8x10e-9. So the correlation is not very strong, but it is statistically significant.
 
 And is there a correlation between an actress's age and the revenue of the movie in which she plays?
 
@@ -131,10 +131,11 @@ And is there a correlation between an actress's age and the revenue of the movie
 
 Okay there's no strong correlation, except that movies with very young or very old actors tend to make very slightly more money.
 
+So until now I figured that actresses play in smaller budget films, are younger than actors, are much much fewer than actors, and that there are no promising trend. Now I wonder whether we can see how women are portrayed in the film industry. 
+
 ## How are women represented ?
 
-
-Okay, so the proportions of women in the movie industry could definitely be better… But now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
+Now let’s see the types of roles I could have as an actress. How will people describe my roles? What type of actions will my characters perform? To find this out I need to have a way to differentiate female characters from men characters in movies. Let me look at the distribution of proportions of female characters in movies.
 
 <figure id="sta">
     <img src="figs/gender_prop_hist.png" alt="Gender proportion histogram" style="width:700px; height:auto; display:block; margin:0 auto;">
