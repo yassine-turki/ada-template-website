@@ -72,7 +72,7 @@ I directly looked at the distribution of main roles. I found out that men have 7
 Let me investigate which genre is most welcoming for my career as an all time star. <a href="#genre_inslusive_firstrole">Figure 5</a> shows the most and least inclusive genre for first roles actors/actresses.
 
 <figure id="genre_inslusive_firstrole">
-    <iframe src="figs/first_role_genre.html" width="750" height="500" frameborder="0"></iframe>
+    <iframe src="figs/first_role_genre.html" width="750" height="700" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Most and least inclusive genre for first role
     </figcaption>
@@ -86,7 +86,7 @@ But if I become a star, how long will I remain a star? (Louise dreaming)
 If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
 
 <figure id="av_age_actors">
-    <iframe src="figs/average_age_of_actors.html" width="800" height="500" frameborder="0"></iframe>
+    <iframe src="figs/average_age_of_actors.html" width="1000" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Begining and ending career age for actors and actressses
     </figcaption>
