@@ -82,12 +82,6 @@ So either I am a feminist, or a pornstar. That's not very nice...
 
 So clearly, women are not present in war films. But they are present in erotic movies 🙄
 
-But then I thought : "perhaps the distribution is skewed due to the high number of 'small budget films'". "Perhaps the big films have more women actresses”. I didn’t really know why. I had this feeling. Perhaps it was just some hope.
-
-So I kept only the films with the highest revenue (above …OSKAR), and looked at the distribution of roles actresses/actors. Figure …OSKAR shows the share of women with roles in these movies.
-
-\[Discussion on graph\]
-
 But if I become a star, how long will I remain a star? (Louise dreaming) 
 If I start to get older, will I remain famous and loved by all my fans? So I looked at the average age for the starting and ending career for both actors and actresses (<a href="#av_age_actors">figure 6</a>)
 
