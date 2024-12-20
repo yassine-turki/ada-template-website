@@ -129,7 +129,7 @@ Oh wow actually it seems that movies with more men tend to generate more revenue
 And is there a correlation between an actress's age and the revenue of the movie in which she plays?
 
 <figure id="sta">
-    <img src="revenue_vs_age_range_gender_boxplot.png" alt="Revenue vs Age boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
+    <img src="figs/revenue_vs_age_range_gender_boxplot.png" alt="Revenue vs Age boxplot graph" style="width:600px; height:auto; display:block; margin:0 auto;">
     <figcaption style="text-align: center; margin-top: 4px;">
         Boxplot graph of movie revenue versus age for films 
     </figcaption>
