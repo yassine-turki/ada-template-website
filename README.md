@@ -108,6 +108,11 @@ But then I thought perhaps women have shorter career, but are more highly remune
 
 Since I planned on becoming the best of the best, I want to see how top actresses might be compensated with respect to actors, and how it has been changing over time. That’s why for each relevant country (where industries are big enough for me!) I plotted the share of revenues of movies where woman took the main role changing over time. 
 
+<div style="display: flex; justify-content: center; align-items: center;">
+    <figure id="Proportion_of_revenues_with_animation" style="margin-right: 20px; text-align: left; width: 1200px; height: 700px;">
+        <iframe src="figs/Proportion_of_revenues_with_animation.html" style="width: 100%; height: 100%; border: none; object-fit: contain;" frameborder="0"></iframe>
+    </figure>
+</div>
 
 But is there any relation between the general gender ratio of a film and the revenue generated?
 
