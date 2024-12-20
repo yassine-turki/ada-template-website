@@ -63,7 +63,7 @@ And so I went and explored my data. The problem was that I didn’t have a way t
 I directly looked at the distribution of main roles. I found out that men have 72% of first roles. But actually I saw before that there are much more actors than actresses. So in that sense, it is logical that there are more first role for actors. However, proportionally, I see that men still have 56% of the first roles. That means if there was the same number of actors and actresses, actors would be more likely to get the first role. Crazy. Similarly to before, perhaps there is a bit of hope in the evolution. <a href="#ev_gender_ratio_roles">Figure 4</a> shows the evolution of women having 1st, 2nd and 3rd roles. Nothing too glamorous as it remains quite constant. We can almost perceive a decrease in the share of women having first role :(. In 2012, there are only 26% of women with first role. That is not soo good for my carrer.
 
 <figure id="ev_gender_ratio_roles">
-    <iframe src="figs/percentage_evolution_of_actresses.html" width="1000" height="500" frameborder="0"></iframe>
+    <iframe src="figs/percentage_evolution_of_actresses.html" width="100%" height="500" frameborder="0"></iframe>
     <figcaption style="text-align: center; margin-top: 4px;">
         Evolution of the gender ratio for different roles 
     </figcaption>
