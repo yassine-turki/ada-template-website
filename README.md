@@ -178,7 +178,7 @@ Ah, well that’s not super encouraging either… It seems films with mostly wom
 </figure>
 
 
-\[START OF ALESSANDRO's PARAGRAPH\] Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant. \[ALESSANDRO\]
+Ok we see similar trends as the word cloud, but for the most part the variations are not as drastic as they could be. Running some hypothesis tests, all the variations are statistically significant.
 
 # Exploring the Language of Film Through Gendered Lenses
 
@@ -331,9 +331,6 @@ In essence, while the industry still shows signs of having been “made by men f
 
 I’ll carry these insights forward as I continue to explore the industry and shape my own journey within it.
 
-\[END OF ALESSANDRO's PARAGRAPH (for now)\]
-
-[START OF YASSINE's PARAGRAPH]
 # Giving a voice to women: looking at directors
 
 I’ve focused all my energy on researching actors so far, but what if I looked at directors instead? Are women directors more inclusive? Do they also suffer inequalities? What if I ever want to direct a movie? What are my chances? 
