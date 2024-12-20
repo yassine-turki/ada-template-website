@@ -69,21 +69,21 @@
     </header>
     <div class="container">
         <div class="team-member">
-            <img src="placeholder.jpg" alt="Team Member Photo">
+            <img src="Adventure_trend.png" alt="Team Member Photo">
             <div class="info">
                 <h3>Member Name</h3>
                 <p>School Section</p>
             </div>
         </div>
         <div class="team-member">
-            <img src="placeholder.jpg" alt="Team Member Photo">
+            <img src="Adventure_trend.png" alt="Team Member Photo">
             <div class="info">
                 <h3>Member Name</h3>
                 <p>School Section</p>
             </div>
         </div>
         <div class="team-member">
-            <img src="placeholder.jpg" alt="Team Member Photo">
+            <img src="Adventure_trend.png" alt="Team Member Photo">
             <div class="info">
                 <h3>Member Name</h3>
                 <p>School Section</p>
